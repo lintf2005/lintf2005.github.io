@@ -1,0 +1,125 @@
+"use strict";
+
+try {
+    angular.module("commonControlsTranslations");
+} catch (e) {
+    angular.module("commonControlsTranslations", [ "pascalprecht.translate" ]);
+}
+
+angular.module("commonControlsTranslations").config([ "$translateProvider", function($translateProvider) {
+    var translations = {
+        general: {
+            "no-link-hover": "連線",
+            "no-link": "未連線",
+            YO: "您好"
+        },
+        cc: {
+            "media-preview": {
+                "tab-label": {
+                    gallery: "圖庫",
+                    image: "圖片",
+                    shape: "形狀",
+                    video: "影片"
+                },
+                "button-text": {
+                    customize: "自訂",
+                    replace: "更換",
+                    edit: "編輯",
+                    "change-gallery": "變更圖庫",
+                    settings: "Settings"
+                },
+                label: {
+                    media: "媒體"
+                },
+                gallery: {
+                    change: "變更圖庫類型",
+                    select: "組織媒體"
+                }
+            },
+            "button-editor-link": {
+                "button-text-link": {
+                    label: "新增連結"
+                }
+            },
+            "c6-list-item-menu": {
+                "item-to-show": {
+                    label: "項目至網頁"
+                },
+                show: {
+                    label: "顯示"
+                },
+                delete: {
+                    label: "刪除"
+                },
+                duplicate: {
+                    label: "重複"
+                },
+                hide: {
+                    label: "隱藏"
+                },
+                edit: {
+                    label: "編輯"
+                }
+            },
+            "button-editor": {
+                "button-text": {
+                    label: "按鈕文字"
+                },
+                "button-link": {
+                    label: "連結"
+                }
+            },
+            "c6-list": {
+                "add-new-item": {
+                    title: "＋新增項目"
+                }
+            }
+        },
+        tooltips: {
+            image: "圖片",
+            "richtext_clear-formatting": "移除格式",
+            playground: {
+                "tab-tooltip": "my cool tab tooltip",
+                tooltip: "此為工具提示",
+                compile: '---\x3e <span class="cc-tooltip-link"><a data-hook="inline-tooltip-link" ng-click="$ctrl.compiledTooltipClick()" href="">按一下這裡</a></span> <---',
+                previous: "前一個",
+                simple: "此為錯誤工具提示",
+                complex: "Lorem ipsum dolor sit amet, elit sit sollicitudin enim, turpis pretium etiam immet, elit sit sollicitudin enim, turpis pretium etiam im met, elit sit sollicitudin enim, turpis pretium etiam im",
+                "tab-disabled-tooltip": "Baga, it`s disabled",
+                next: "下一步"
+            },
+            C4_VIDEO: "轉換至影片",
+            edit: "編輯",
+            "richtext_add-link": "連結",
+            pattern: "圖樣",
+            C4_SHAPE: "轉換至形狀",
+            "richtext_edit-link": "編輯連結",
+            settings: "設定",
+            video: "影片",
+            hidden_item: "項目被隱藏",
+            replace: "取代",
+            richtext_bold: "粗體",
+            help: "說明",
+            crop: "裁切",
+            disabled_item: "無法隱藏此項目",
+            C4_IMAGE: "轉換至圖片",
+            gallery: "圖庫",
+            "richtext_cannot-link": "標記您想連結的文字。",
+            shape: "形狀",
+            richtext_numbers: "編號",
+            richtext_bullets: "項目符號",
+            richtext_underline: "底線",
+            back: "返回",
+            C4_GALLERY: "轉換至圖庫",
+            hide_item: "按一下以隱藏",
+            color: "顏色",
+            richtext_italic: "斜體",
+            show_item: "按一下以顯示"
+        }
+    };
+    $translateProvider.translations("zh", translations);
+    $translateProvider.translations(translations);
+    if ($translateProvider.preferredLanguage) {
+        $translateProvider.preferredLanguage("zh");
+    }
+} ]).value("preferredLanguage", "zh");

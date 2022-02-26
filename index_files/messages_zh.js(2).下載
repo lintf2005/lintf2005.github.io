@@ -1,0 +1,86 @@
+"use strict";
+
+try {
+    angular.module("organizeMediaTranslations");
+} catch (e) {
+    angular.module("organizeMediaTranslations", [ "pascalprecht.translate" ]);
+}
+
+angular.module("organizeMediaTranslations").config([ "$translateProvider", function($translateProvider) {
+    var translations = {
+        "change-clipart": {
+            button: "Change clipart"
+        },
+        "change-shape": {
+            button: "Change shape"
+        },
+        "search-bar": {
+            placeholder: "請輸入字句搜尋影片"
+        },
+        "Search-other-videos": {
+            button: "Search other videos"
+        },
+        "from-vimeo": {
+            title: "Vimeo"
+        },
+        "search-video": {
+            text: "搜尋{{ source }}影片",
+            "no-results": "找不到任何結果。 請重新搜尋。"
+        },
+        "video-box": {
+            "play-settings": {
+                controls: {
+                    options: {
+                        always: "一律",
+                        "on-hover": "在浮動檢視時",
+                        never: "永不"
+                    },
+                    title: "When are controls shown?"
+                },
+                loop: "In a loop",
+                autoplay: "載入時自動播放",
+                title: "How does your video play?"
+            }
+        },
+        "media-settings": {
+            "media-title": {
+                title: "標題（替代文字）"
+            },
+            types: {
+                images: "Images"
+            },
+            "link-label": "連結",
+            "image-settings": {
+                title: "圖片設定"
+            },
+            "description-placeholder": "描述您的圖片",
+            description: {
+                title: "說明"
+            },
+            "title-placeholder": "在這裡新增標題",
+            preview: "預覽"
+        },
+        search: {
+            from: "搜尋來源：",
+            title: "搜尋影片"
+        },
+        "from-youtube": {
+            title: "YouTube"
+        },
+        general: {
+            "add-more-button": "新增更多",
+            "cancel-button": "取消",
+            "no-link-hover": "連線",
+            "add-button": "新增",
+            "save-button": "Save",
+            "no-link": "未連線",
+            "done-button": "已完成",
+            "search-button": "搜尋"
+        }
+    };
+    $translateProvider.translations("zh", translations);
+    $translateProvider.translations(translations);
+    if ($translateProvider.preferredLanguage) {
+        $translateProvider.preferredLanguage("zh");
+    }
+} ]).value("preferredLanguage", "zh");

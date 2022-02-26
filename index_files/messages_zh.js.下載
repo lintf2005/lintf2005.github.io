@@ -1,0 +1,4740 @@
+'use strict';
+
+try {
+  angular.module('siteGeneratorStaticsConsumerTranslations');
+} catch (e) {
+  angular.module('siteGeneratorStaticsConsumerTranslations', ['pascalprecht.translate']);
+}
+
+angular.module('siteGeneratorStaticsConsumerTranslations').config(['$translateProvider',
+  function ($translateProvider) {
+    var translations = {
+      'tooltips': {
+        'tpa_bookings_settings': '管理服務',
+        'tpa_blog_settings': '管理部落格',
+        'ecomm_floating-go-to-editor-link': 'Add eComm features like a wishlist, related products & more in the Editor.\n',
+        'media-settings': {
+          'disabled-tab-video': '如需更多影片選項，<br />請前往<span class="cc-tooltip-link"><a href="" ng-click="$ctrl.onTooltipClick()">設計</a></span>',
+          'size-button': {
+            'strip': '調整圖片位置，<br>使其符合框架的大小，<br/>呈現您心中的理想模樣。',
+            'backgroundlist': '調整圖片位置，<br>使其符合框架的大小，<br/>呈現您心中的理想模樣。',
+            'croppedheader': '手動裁剪此圖片，<br/>使其精準符合您的需求。',
+            'stripheader': '調整圖片位置，<br>使其符合框架的大小，<br/>呈現您心中的理想模樣。',
+            'cropped': '手動裁剪此圖片，<br/>使其精準符合您的需求。',
+            'uncropped': '如要查看完整圖片，<br/>請查看更多欄位版面配置。',
+            'background': '調整圖片位置，<br>使其符合框架的大小，<br/>呈現您心中的理想模樣。',
+            'gallery': '選擇圖庫展示您的圖片。',
+            'backgroundfull': '調整圖片位置，<br>使其符合框架的大小，<br/>呈現您心中的理想模樣。',
+            'column': '調整圖片位置，<br>使其符合框架的大小，<br/>呈現您心中的理想模樣。',
+            'backgroundheader': '調整圖片位置，<br>使其符合框架的大小，<br/>呈現您心中的理想模樣。'
+          },
+          'disabled-tab-gallery': '如需更多圖庫選項，<br />請前往<span class="cc-tooltip-link"><a href="" ng-click="$ctrl.onTooltipClick()">設計</a></span>'
+        },
+        'mobile_html_edit_disabled': '要編輯 HTML，<span class="cc-tooltip-link"><a ng-click="$ctrl.onActionTooltip()" href=""> 轉換至桌面 </a></span>。',
+        'overlay_print_additional_height': '增加其他高度',
+        'design_kit_reset': '重設為預設設定',
+        'saturation': '決定網站要顯示的<br/>色彩風格<br/>',
+        'color_picker_edit_colors': '編輯網站顏色',
+        'overlay_enlarge_font_section': '放大字型',
+        'mobile_text_field_disabled': '想要編輯文字設定嗎？請<br/>前往<span class="cc-tooltip-link"><a ng-click="$ctrl.onTooltipLinkClick()" href="">桌面</a></span>。',
+        'publish_error_site_name_invalid_chars': '無效的字元',
+        'crop_cancel': '取消',
+        'overlay_rotate_color_section': '旋轉顏色',
+        'link-details-paypal': {
+          'toggle': {
+            'off': '設定您希望網站訪客捐贈的金額。',
+            'on': '先關閉以便網站訪客捐贈任何金額。'
+          },
+          'fixed': '工具提示'
+        },
+        'design_coloration_readability_negative': '這些顏色會使網站上的文字難以閱讀。',
+        'design_header_type_transparent_disabled': 'Transparent header is not supported.',
+        'publish_error_site_name_too_long': '網站名稱必須<br/>介於 4 至 20 個字元間',
+        'user_web_address': '',
+        'overlay_delete': '刪除',
+        'overlay_settings': '變更設定',
+        'menu_add_section': '新增欄位',
+        'publish_error_site_name_invalid': '無效的網站名稱',
+        'design_coloration_palette_edit': '編輯顏色設定',
+        'intro_card_url_default': '變更連結，讓訪客能夠前往您的社群網頁（而非 Wix 網頁）',
+        'seo_description_validation': '說明長度不得超過 160 個字元（包含空格）',
+        'design_change_font': '變更字型',
+        'edit_mode_toggle_mobile': '行動裝置編輯選項',
+        'design_coloration_mode_toggle': '從調色盤中<br/>設定亮色<br/>或暗色背景',
+        'publish_error_site_name_is_not_string': '不能留空',
+        'overlay_reset_font_section': '重設字型',
+        'header_fixed_header': '您可以將頁首設定為一律可見，<br/>即使訪客向下捲動頁面，依然能看見。<br/>請預覽網站，<br/>看看實際效果',
+        'drag_section': '拖曳欄位',
+        'overlay_change_column_position': '變更欄位位置',
+        'overlay_image_fit_section': '切換圖片的最適大小',
+        'overlay_edit': '編輯內容',
+        'seo_title_tooltip': '這是您頁面在 Google 的標題。請新增頁面名稱、網站名稱和業務簡介（可輸入 55 至 70 個字元）。',
+        'menu_preview': '在桌面和行動裝置上查看網站外觀。',
+        'mobile_media_edit_disabled': '想要替換媒體內容嗎？請前往<span class="cc-tooltip-link"><a ng-click="$ctrl.onTooltipLinkClick()" href="">桌面</a></span>。',
+        'intro_card_url_invalid': '無效的網址',
+        'design_coloration_help': '說明',
+        'html_settings_edit_link': '您可以連結任何外部網站或網站上的頁面，只要網址開頭為 https://',
+        'zoom_out': '縮小',
+        'overlay_duplicate_section': '重複',
+        'web-address-is-not-valid': '請輸入有效的網址',
+        'design_coloration_readability_positive': '調色盤的顏色會使網站上的文字容易閱讀。',
+        'overlay_move_down': '往下移動',
+        'publish_error_site_name_ends_with_hyphen': '名稱不得以連字號為結尾',
+        'edit_mode_toggle_desktop': '桌電編輯選項',
+        'animation_scroll_effects_help': '在網站背景圖片中新增令人印象深刻的捲動效果。點選預覽並捲動頁面，即可查看實際效果。',
+        'section_background_categories_media': '能夠完美襯托網站的圖片、影片及圖庫。',
+        'design_coloration_palette_list': '根據您的主要顏色，我們建議您在網站中使用這些配色。',
+        'members-area': {
+          'field-editor': {
+            'button': '會員可以在這裡註冊<br>並且<br>登入其帳戶。<span class="cc-tooltip-link"><a href="" ng-click="$parent.$parent.$ctrl.onTooltipClick()">進一步了解</a></span>'
+          },
+          'signup-settings-panel': {
+            'privacyPolicy': {
+              'link': '製作隱私權政策頁，並在訪客註冊時連結至此。有關建立隱私權政策的指南，請<span class="cc-tooltip-link"><a href="" ng-click="$parent.$parent.$parent.$ctrl.onTooltipClick($parent.$parent.$parent.policy)">進一步了解</a></span>'
+            },
+            'codeOfConduct': {
+              'link': '建立行為準則網頁了嗎？請將它連結至此，以便訪客在註冊網站時可以查看。'
+            },
+            'termsOfUse': {
+              'link': '製作使用條款頁，並在訪客註冊時連結至此。有關建立使用條款的指南，請<span class="cc-tooltip-link"><a href="" ng-click="$parent.$parent.$parent.$ctrl.onTooltipClick($parent.$parent.$parent.policy)">進一步了解</a></span>'
+            }
+          },
+          'info-popup': '這些網頁僅限您的網站會員使用。<br/>他們登入帳戶時就會看到。<br/><span class="cc-tooltip-link"><a href="" ng-click="$ctrl.onTooltipClick(item)">瞭解更多</a></span>'
+        },
+        'best_match': 'ADI 掃描了您匯入的文字，<br/>以便為此段落找到最適合的內容。',
+        'menu_home': '新增和管理頁面',
+        'design_coloration_main_color': '為您的網站選擇主要顏色。ADI 會製作推薦的調色盤來搭配。',
+        'shape': '形狀',
+        'preview_toggle_mobile': '行動裝置預覽',
+        'design_coloration_logo_palette': 'ADI 利用您的商標色彩自動建立此調色盤。',
+        'section_menu_clicked': '若要重新命名或隱藏選單中的欄位，請編輯該欄位。<span class="cc-tooltip-link"><a ng-click="$ctrl.onSectionTooltipLinkClick()" href="">進一步了解</a></span>',
+        'overlay_plus': '在這裡新增欄位',
+        'overlay_move_up': '往上移動',
+        'overlay_shrink_font_section': '縮小字型',
+        'menu_saved_text': '系統已自動儲存<br/>您的變更內容',
+        'overlay_gear': '欄位動畫',
+        'design_header_type_fixed': '固定頁首一律可見，<br/>即使訪客向下捲動頁面，<br/>依然能看見。',
+        'seo_url_validation': '頁面網址至少要 1 個字元以上，且不得包含特殊字元（%、&、# 等）',
+        'richtext_alignment': '對齊',
+        'section_background_categories_color': '調色盤中的背景顏色。',
+        'design_coloration_add_color': '新增自訂顏色',
+        'menu_undo': '復原',
+        'publish_error_site_name_too_short': '網站名稱必須<br/>介於 4 至 20 個字元間',
+        'social_validation': '立即更新社群連結，以便連接至您的個人檔案！',
+        'seo_url_tooltip': '這是您的線上網址。請務必選擇好記且有關聯性的網址，使訪客能輕鬆查詢並記住網頁。',
+        'design_change_animation': '編輯動畫設定',
+        'menu_publish': '將網站發佈上線，<br />讓其他人能夠看到您的網站。',
+        'gallery': '圖庫',
+        'overlay_change_preset': '變更設計',
+        'close_preview': '返回編輯模式',
+        'next_item': '下一步',
+        'richtext_font-size': 'Font Size',
+        'email_to_form_builder_settings_panel': '若要再有人提交您的表單時收到電子郵件通知，請在 <span class="cc-tooltip-link"><a href="" ng-click="$parent.$parent.$parent.$parent.$ctrl.goToFormSettingsPanel()" >表單設定</a></span> 再次新增您的電子郵件',
+        'menu_add_dropdown': '新增頁面或欄位',
+        'previous_item': '前一個',
+        'zoom_in': '放大',
+        'seo_title_validation': '標題長度不得超過 70 個字元（包含空格）',
+        'overlay_move_page': '移動',
+        'section_name_in_menu': '此名稱將同時顯示在您的網站選單上。',
+        'menu_redo': '取消復原',
+        'tpa_stores_settings': '管理商店',
+        'menu_add_page': '增加新頁面',
+        'intro_card_website_address_invalid': '無效的網址',
+        'menu_publish|abTranslate_1|PublishTooltipABC': 'Publish and start driving traffic to your site.',
+        'html_settings_edit_html': '您可以新增 HTML 程式碼 <br> 網址開頭為 https://',
+        'slideshow-transition-help': '點選每張投影片，即可新增您自己的內容。<br/>若要變更出現順序，請向上或向下<br/>移動投影片。',
+        'video': '影片',
+        'lightbox_settings_panel_activate': '燈箱會在您選擇的任何網頁上一次彈出給訪客。',
+        'seo_description_tooltip': '網站說明應介於 50 至 160 個字元間（包含空格）',
+        'preview_toggle_desktop': '桌面預覽',
+        'design_advanced_colors_reset': '重設顏色',
+        'brightness': '選擇網站背景的<br/>明亮度<br/>',
+        'animation_animation_type_help': 'Add a lively animation to the elements in your site',
+        'floating-go-to-editor-link': '以進階設計工具和更多應用程式來全面自訂網站。',
+        'overlay_enlarge_section_height': '放大欄位',
+        'pages_panel': {
+          'add-page': {
+            'disabled': '您已用盡此網站之頁面限額。'
+          }
+        },
+        'publish_error_site_name_already_exists': '名稱已存在',
+        'intro_card_email_invalid': '請輸入有效的電子郵件',
+        'text-manager-link-imported': '使用從您的網站匯入的文字。',
+        'focal-point': {
+          'hint': '拖曳以選擇<br/>圖片中心'
+        },
+        'animation_page_transition_help': '為網站新增有趣的網頁轉換效果，呈現更加生動活潑的效果！點選預覽，看看實際效果',
+        'page_menu_clicked': 'Manage your menu and navigate between pages in the <span class="cc-tooltip-link"><a ng-click="$ctrl.onPageTooltipLinkClick()" href="">pages manager</a></span>.',
+        'seo_keywords_tooltip': '最多只能使用 10 個關鍵字或短語，且應用逗號分開',
+        'menu_publish|abTranslate_2|PublishTooltipABC': 'Publish to go live so you can share your site. ',
+        'lightbox_paragraph_validation': 'Paragraph can be up to x characters.',
+        'intro_delete': '刪除',
+        'design_header_type_transparent_non_home': '只有首頁上的<br/>頁首背景<br/>是透明的。',
+        'import-site': {
+          'import-page': {
+            'already-imported': '此頁面已<br/>匯入。 <br/><span class=\'link-button\' ng-click=\'$ctrl.handleImport(item)\'>再次匯入此頁面</span>'
+          }
+        },
+        'text-manager-link-adi': '檢視更多此文字的選項。',
+        'crop_apply': '套用',
+        'overlay_connect_domain': '連線至您的網域：<br/> 透過個人的品牌化網域名稱，讓網站展現更專業的風貌',
+        'pattern': '圖樣',
+        'fake-browser-bar-url': '您的網址為：<br><a class="fake_browser_bar_tooltip_url" href="{{URL}}" target="_blank">{{shortUrl}}</a>',
+        'section_background_categories_pattern': '系統會從網站的調色盤中<br/>選擇圖案色彩。您可以變更網站色彩，看看其他選項。',
+        'suggest_layout_change': '使用不同的版面配置，就能讓相片更加好看；立即選擇一個版面配置吧！',
+        'overlay_shrink_section_height': '縮小欄位',
+        'image': '圖片',
+        'seo_keywords_validation': '最多只能允許 10 個關鍵字和 250 個字元（包含空格）',
+        'design_header_type_transparent_home': '若要讓網站完美展示現代感<br/>，您可以將首頁的<br/>背景透明化。'
+      },
+      'intro': {
+        'category-search': {
+          'example-label-photography': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>婚禮攝影師</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>旅遊攝影師</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>嬰兒攝影工作室</a>',
+          'example-category': {
+            'online-hair-extensions-store': '網路假髮商店',
+            'restaurants-food-example-4': 'Restaurant',
+            'artist': '演出者',
+            'music-example-4': '搖滾樂團',
+            'author': '作者',
+            'beauty-wellness-example-2': '按摩治療師',
+            'online-health-food-store': '網路健康食品店',
+            'consulting-firm': '顧問公司',
+            'photography-example-5': '攝影工作室',
+            'travel-agency': '旅行社',
+            'other-example-1': '非營利組織',
+            'blog-example-2': '新聞部落格',
+            'online-jewelry-store': '網路珠寶店',
+            'hip-hop-artist': '嘻哈藝術家',
+            'business-example-4': '清潔服務',
+            'blogger': '部落客',
+            'stores-example-1': '網路服飾店',
+            'accommodation-example-4': 'Campsite',
+            'graphic-designer': '平面設計師',
+            'musician': '音樂家',
+            'marketing-agency': '行銷機構',
+            'business-example-5': '行銷機構',
+            'blog-example-3': '部落客',
+            'photography-example-2': '攝影作品集',
+            'health-blog': '健康部落格',
+            'events-example-3': '會議',
+            'portfolio-cv-example-2': '藝術家',
+            'design-example-2': '演出者',
+            'unknown-example-3': '房地產仲介',
+            'design-example-3': '作品集',
+            'online-clothing-store': '網路服飾店',
+            'make-up-artist': '彩妝大師',
+            'beauty-wellness-example-1': '彩妝大師',
+            'restaurants-food-example-5': 'Cafe',
+            'music-example-5': '嘻哈藝術家',
+            'business-blog': '商業部落格',
+            'dj': 'DJ',
+            'portfolio': '作品集',
+            'event-photographer': '活動攝影師',
+            'portfolio-cv-example-4': '履歷',
+            'fashion-photography-studio': '時尚攝影工作室',
+            'other-example-2': '學校',
+            'school': '學校',
+            'stores-example-4': '網路健康食品店',
+            'blog2-example-2': '新聞部落格',
+            'photography-portfolio': '攝影作品集',
+            'unknown-example-2': '國小',
+            'salon': '沙龍',
+            'business-example-1': '顧問公司',
+            'beauty-wellness-example-5': '營養師',
+            'music-example-1': 'DJ',
+            'photography-example-1': '活動攝影師',
+            'accommodation-example-5': 'Vacation Home',
+            'events-example-2': '非營利活動',
+            'unknown-example-4': '網路體育用品店',
+            'design-example-4': '建築師事務所',
+            'events-example-4': '家庭聚會',
+            'photography-example-4': '攝影師',
+            'conference': '會議',
+            'elementary-school': '國小',
+            'portfolio-cv-example-5': '簡歷',
+            'restaurants-food-example-1': 'Wine Bar',
+            'architecture-firm': '建築師事務所',
+            'online-sporting-goods-store': '網路體育用品店',
+            'other-example-3': '慈善',
+            'music-example-2': '錄音室',
+            'rock-band': '搖滾樂團',
+            'accommodation-example-2': 'Boutique Hotel',
+            'events-example-1': '婚禮',
+            'real-estate-agency': '房地產仲介',
+            'stores-example-5': '網路假髮商店',
+            'restaurants-food-example-2': 'Bakery',
+            'nutritionist': '營養師',
+            'business-example-2': '非營利組織',
+            'recording-studio': '錄音室',
+            'blog-example-5': '商業部落格',
+            'beauty-wellness-example-4': '護膚診所',
+            'blog2-example-3': '部落客',
+            'non-profit-organization': '非營利組織',
+            'cv': '簡歷',
+            'events-example-5': '運動錦標賽',
+            'meetup': '聚會',
+            'wedding': '婚禮',
+            'blog-example-1': '時尚部落格',
+            'online-home-goods-store': '網路家居用品店',
+            'design-example-1': '平面設計師',
+            'massage-therapist': '按摩治療師',
+            'news-blog': '新聞部落格',
+            'birthday-party': '生日派對',
+            'charity': '慈善',
+            'fashion-blog': '時尚部落格',
+            'photography-example-3': '時尚攝影工作室',
+            'blog2-example-5': '商業部落格',
+            'stores-example-3': '網路家居用品店',
+            'other-example-4': '作者',
+            'unknown-example-5': '彩妝大師',
+            'design-example-5': '設計工作室',
+            'photography-studio': '攝影工作室',
+            'restaurants-food-example-3': 'Chef',
+            'stores-example-2': '網路珠寶店',
+            'blog2-example-1': '時尚部落格',
+            'accommodation-example-3': 'Hostel',
+            'accommodation-example-1': 'Bed and Breakfast',
+            'portfolio-cv-example-3': '演員',
+            'blog-example-4': '健康部落格',
+            'other-example-5': '部落客',
+            'portfolio-cv-example-1': '作品集',
+            'cleaning-service': '清潔服務',
+            'business-example-3': '專業教練',
+            'unknown-example-1': '旅行社',
+            'resume': '履歷',
+            'actor': '演員',
+            'photographer': '攝影師',
+            'music-example-3': '音樂家',
+            'marathon': '馬拉松',
+            'blog2-example-4': '健康部落格',
+            'design-studio': '設計工作室',
+            'skin-care-clinic': '護膚診所',
+            'beauty-wellness-example-3': '沙龍',
+            'coaching-professional': '專業教練'
+          },
+          'search-tip': '<span class=\'label\'>提示</span>選擇您的商務或網站類型，以便 ADI 可以根據您的需求開始自訂建置網站',
+          'example-label-music': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>古典音樂家</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>搖滾樂團</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>DJ</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>錄音工作室</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>婚禮歌手</a>',
+          'label-Stores': '您想建立什麼樣的網路商店？',
+          'import-site-content-tip': '<span class=\'label\'>提示：</span>如果想要重新設計一個您擁有的網站，就特別推薦這個步驟<br>。ADI 將使用您的圖片和文字，像變魔術一樣<br>為您的Wix網站重新製作煥然一新的版本',
+          'example-label-other': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>小學</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>體育社團</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>教堂</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>陸軍和海軍商店</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>藝術中心</a>',
+          'import-site-confirm': {
+            'body': '為了取得專屬於您的網站，Wix ADI 需要確認您擁有您所提供的網站內容。',
+            'title': 'Wix ADI 想要製作您的獨特網站',
+            'validate-content': '點選「下一步」表示您確認擁有此網站的內容。'
+          },
+          'search-label-music': '您想製作什麼樣的音樂網站？',
+          'example-label': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>律師事務所</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>旅行社</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>化妝師</a>',
+          'search-label': '搜尋您的網站類型或商業類型',
+          'label': '您想要製作什麼類型的網站？',
+          'sublabel': '選擇您的商業或網站類型以便開始。',
+          'label-design': '您想要建立的網站目的為？',
+          'search-label-Stores': '您想建立什麼樣的網路商店？',
+          'label-portfolio-cv': '您想製作什麼樣的簡歷或作品集？',
+          'label-Blog': '您想建立什麼樣的部落格?',
+          'example-label-design': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>網頁設計作品集</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>創意機構</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>插畫家作品集</a>',
+          'label-business': '您的網站用於何種業務？',
+          'examples-label': '範例',
+          'search-label-portfolio-cv': '您想製作什麼樣的作品集或簡歷？',
+          'no-result-popover-label': '找不到您要找的東西？從以下其中一個開始：',
+          'example-label-Blog': '例如：<a ng-click=\'$ctrl.onExampleClick($event)\'>個人部落格</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>旅遊部落格</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>新聞部落格</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>時尚部落格</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>美食部落格</a>',
+          'example-label-business': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>律師事務所</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>房地產仲介</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>私人教練</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>建築公司</a>',
+          'search-label-Blog': '您想建立什麼樣的部落格?',
+          'label-photography': '您想製作什麼樣的攝影網站？',
+          'example-label-portfolio-cv': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>平面設計作品集</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>履歷</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>寫作作品集</a>',
+          'label-other': '您想要建立的網站目的為？',
+          'example-label-Stores': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>網路服飾店</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>網路飾品店</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>網路護膚品商店</a>',
+          'suggestions-label': '建議',
+          'no-result-label': '找不到任何符合您搜尋的結果。您可以從以下其中一個開始：',
+          'label-health-wellness': '您想要建立的網站目的為？',
+          'example-label-health-wellness': '即<a ng-click=\'$ctrl.onExampleClick($event)\'>私人教練</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>化妝師</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>瑜珈工作室</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>牙科診所</a>、<a ng-click=\'$ctrl.onExampleClick($event)\'>美髮沙龍</a>',
+          'label-music': '您想製作什麼樣的音樂網站？',
+          'input-placeholder': '輸入您的商業或網站類型',
+          'label-singleEvent': '您正在計劃什麼類型的活動？',
+          'invalid-characters-label': '請以英文輸入文字',
+          'related-results-label': '相關結果',
+          'search-label-photography': '您想製作什麼樣的攝影網站？'
+        },
+        'apps-recommendations': {
+          'music': {
+            'title': '音樂',
+            'subtitle': '直播並免費鎖售您的音樂。'
+          },
+          'instagram': {
+            'subtitle': '顯示您的 Instagram 相片和影片。',
+            'title': 'Instagram 動態消息'
+          },
+          'video': {
+            'title': '影片',
+            'subtitle': '分享、串流並販售影片。'
+          },
+          'paid-plans': {
+            'subtitle': '販售訂閲方案和會員資格。',
+            'title': '定價方案'
+          },
+          'members-area': {
+            'title': '會員專區',
+            'subtitle': '讓會員在您的網站上建立私人帳戶。'
+          },
+          'event': {
+            'title': '單一活動',
+            'subtitle': '建立活動、銷售票券並追蹤回覆。'
+          },
+          'groups': {
+            'title': '群組',
+            'subtitle': '為網站會員建立社群。'
+          },
+          'online-store': {
+            'feature-name': '網路商店',
+            'title': '網路商店',
+            'subtitle': '販售商品，或尋找可販售的新產品。'
+          },
+          'bookings': {
+            'feature-name': '預訂',
+            'subtitle': '讓客戶在您的場地預訂私人和群組時段。',
+            'title': '預約'
+          },
+          'photoalbums': {
+            'subtitle': '建立自訂相簿。',
+            'title': '相簿'
+          },
+          'subscribe': {
+            'subtitle': '讓訪客註冊加入電子郵件清單。',
+            'title': '訂閱表單'
+          },
+          'forum': {
+            'subtitle': '展開討論，建立社群。',
+            'title': '論壇'
+          },
+          'challenges': {
+            'subtitle': '建立並販售逐步訓練計畫。',
+            'title': '網路程式'
+          },
+          'chat': {
+            'title': '聊天',
+            'subtitle': '透過桌面或行動裝置與網站訪客交談。'
+          },
+          'bands-in-town': {
+            'title': 'Bandsintown',
+            'subtitle': '列出所有接下來進行的現場活動。'
+          },
+          'blog': {
+            'feature-name': '部落格',
+            'subtitle': '撰寫文章帶來流量，分享您的想法。',
+            'title': '部落格'
+          },
+          'event-list': {
+            'title': '活動',
+            'subtitle': '建立活動、銷售票券並追蹤回覆。'
+          }
+        },
+        'business-name': {
+          'label-nameOrBand': '您或您的<br> 品牌名稱<br> 名稱為何？',
+          'label-school': '您的<br> 學校<br> 名稱為何？',
+          'label-courseOrProgram': '您的<br> 課程或計畫<br> 名稱為何？',
+          'input-placeholder-filmOrVideo': '  Add the title of your film or video',
+          'label-pageLanding': '您的<br> 登錄網頁<br> 名稱為何？',
+          'input-placeholder-singleEvent': '  Add the name of your event',
+          'label-hotelOrResort': '您的<br> 飯店或度假村<br> 名稱為何？',
+          'input-placeholder-businessName': '  Add the name of your business',
+          'label-org': '您的<br> 組織<br> 名稱為何？',
+          'label-zooOrPark': '您的<br> 動物園或樂園<br> 名稱為何？',
+          'label-fullOrStagename': '您的<br> 全名或藝名<br> 名稱為何？',
+          'label-show': '您的<br> 電影或節目<br> 名稱為何？',
+          'label-filmOrVideo': '您的<br> 電影或影片<br> 名稱為何？',
+          'input-placeholder-site': '  Add the name of your site',
+          'input-placeholder-business': '輸入您的姓名或您的商務名稱',
+          'input-placeholder-project': '  Add the title of your project',
+          'input-placeholder-nameOrBand': '  Add your stage name or band name',
+          'input-placeholder-band': '  Add the name of your band',
+          'input-placeholder-nameOrPractice': '輸入您的姓名或您的執業場所名稱',
+          'label-blog': '您的<br> 部落格<br> 名稱為何？',
+          'input-label': '您的<br>商業或<br>網站名稱<br>為何？',
+          'input-placeholder-onlineStore': '  Add the name of your online store',
+          'label-artist-or-band': '您的<br> 演出者或<br> 樂團名稱為何？',
+          'input-placeholder-church': '  Add the name of your church',
+          'input-placeholder-radioShowStation': '新增廣播節目或電台名稱',
+          'input-placeholder-store': '新增您的商店名稱',
+          'input-placeholder-app': '  Add the name of your app',
+          'input-placeholder-team': '  Add the name of your team',
+          'input-placeholder': '輸入您的商務或網站名稱',
+          'input-placeholder-forum': '新增網路論壇的名稱',
+          'input-placeholder-camp': '  Add the name of your camp',
+          'label-site': '您的<br> 網路<br> 名稱為何？',
+          'input-placeholder-blog': '  Add the name of your blog',
+          'label-fullname': '您的<br> 全名為何？',
+          'label-band2': '您的<br> 樂團名稱為何？',
+          'label-band': '您的<br> 樂團名稱<br> 為何？',
+          'label-artist': '您的<br> 演出者名稱為何？',
+          'input-placeholder-pageLanding': '  Add the name of your landing page',
+          'input-placeholder-studio': '  Add the name of your studio',
+          'input-placeholder-venue': '  Add the name of your venue',
+          'input-placeholder-synagogue': '新增猶太會堂名稱',
+          'input-placeholder-courseOrProgram': '  Add the name of your course or program',
+          'label-campaign': '您的<br> 廣告行銷活動<br> 名稱為何？',
+          'label-artistOrBand': '您的<br> 演出者或<br> 樂團名稱為何？',
+          'input-placeholder-campaign': '  Add the name of your campaign',
+          'label-project': '您的<br> 專案<br> 標題為何？',
+          'label-nameOrPractice': '您的姓名或執業名稱為何？',
+          'label-app': '您的<br> 應用程式<br> 名稱為何？',
+          'label-synagogue': '您的<br> 猶太會堂<br> 名稱為何？',
+          'label-choir': '您的<br> 合唱團名稱<br>  為何？',
+          'label-onlineStore': '您的<br> 網路商店<br> 名稱為何？',
+          'label': '您的<br> 商務或<br> 網站名稱<br> 為何？',
+          'label-businessName': '您的<br> 商務<br> 名稱為何？',
+          'label-website': '您或您的<br> 網站<br> 名稱為何？',
+          'label-store': '您的<br> 商店<br> 名稱為何？',
+          'input-placeholder-show': '  Add the title of your film or show',
+          'input-placeholder-website': '  Add your name or your website\'s name',
+          'default': '我的網站',
+          'label-studio': '您的<br> 工作室<br> 名稱為何？',
+          'input-placeholder-hotelOrResort': '  Add the name of your hotel or resort',
+          'label-ebookOrGuide': '您的<br> 電子書或指南<br> 名稱為何？',
+          'input-placeholder-choir': '  Add the name of your choir',
+          'input-placeholder-publication': '  Add the name of your publication',
+          'label-stagename': '您的<br> 藝名為何？',
+          'label-venue': '您的<br> 場地<br> 名稱為何？',
+          'input-placeholder-zooOrPark': '  Add the name of your zoo or park',
+          'label-forum': '您的<br> 網路論壇<br> 名稱為何？',
+          'label-camp': '您的<br> 營地<br> 名稱為何？',
+          'label-radioShowStation': '您的<br> 電台節目或電台<br> 名稱為何？',
+          'label-church': '您的<br> 教會<br> 名稱為何？',
+          'label-publication': '您的<br> 出版品<br> 名稱為何？',
+          'input-placeholder-fullname': '  Add your full name',
+          'label-team': '您的<br> 團隊<br> 名稱為何？',
+          'label-singleEvent': '您的<br> 活動名稱<br> 為何？',
+          'input-placeholder-ebookOrGuide': '  Add the name of your eBook or guide',
+          'label-business': '您或您的<br> 商務名稱<br> 為何？',
+          'input-placeholder-school': '  Add the name of your school',
+          'label-blogWebsite': '您的<br> 部落格或<br> 網站名稱<br> 為何？',
+          'empty': '商務名稱',
+          'input-placeholder-fullOrStagename': '輸入您的全名或藝名',
+          'input-placeholder-org': '  Add the name of your organization'
+        },
+        'business_card': {
+          'logo': {
+            'delete': '刪除',
+            'replace': '更換'
+          }
+        },
+        'business-dates': {
+          'change-timezone': '變更',
+          'date-placeholder': '選擇日期',
+          'input-label': '您的活動何時舉行？',
+          'date-label-from': '開始',
+          'wrong-end-date': '選擇一個在開始日期之後的結束日期。',
+          'date-label-to': '結束',
+          'add-date': '結束日期與時間',
+          'time-item': '{{hours}}:{{minutes}}',
+          'wrong-start-date': '請為此活動選擇未來的日期。',
+          'time-placeholder': '選擇時間點'
+        },
+        'optional-label': '選填',
+        'select-user': {
+          'select-button': '那是我',
+          'title-no-results': '我們找不到您的業務。',
+          'title-error': '嘗試重新搜尋',
+          'title': '您的商業是其中之一嗎？',
+          'in': '在',
+          'address': '地址',
+          'name': '姓名',
+          'results-single': '找到的結果',
+          'results-multiple': '找到的結果',
+          'no-results': '我們在網路上找不到您的業務。',
+          'results-none': '重新搜尋或<button ng-click=\'$ctrl.skip()\'>略過</button>以自行新增詳細資料',
+          'results-error': '請隨意<button ng-click=\'$ctrl.skip()\'>略過</button>以自行新增詳細資料'
+        },
+        'recaptcha': {
+          'title': 'Let\'s confirm<br> you are not a<br> Robot',
+          'terms': '點選下一步表示您同意我們的<a href=\'https://www.wix.com/about/terms-of-use\' target=\'_blank\'>使用條款</a><br>，並承認已閱讀<a href=\'https://www.wix.com/about/privacy\' target=\'_blank\'>隱私權政策</a>'
+        },
+        'apps-recommendation': {
+          'installed-apps': {
+            'description': '您的網站隨附 <span class=\'hidden-installed-apps\'>{{installedAppsStr}}</span>。推薦您使用這些功能。',
+            'indefinite-article-an': 'an',
+            'indefinite-article-a': 'a',
+            'and-operator': '和'
+          },
+          'label': '您的新網站需要哪些功能呢？',
+          'description': '我們推薦您使用以下功能。',
+          'title': '推薦',
+          'more-features': '更多功能'
+        },
+        'change-link': '變更',
+        'first-time': {
+          'title1': '進入 ADI 的世界。',
+          'title2': '來設計一個獨一無二專屬您的網站吧。'
+        },
+        'general-categories': {
+          'general': {
+            'portfolio-and-cv': '作品集及簡歷',
+            'other': '其他',
+            'online-store': '網路商店',
+            'general-blog': '一般部落格',
+            'local-business': '本地事業',
+            'design-business': '設計事業',
+            'music-business': '音樂事業',
+            'photographer': '攝影師',
+            'beauty-business': '美容事業'
+          }
+        },
+        'done-button': '完成',
+        'event-details': {
+          'dates-label': '日期和時間',
+          'name-placeholder': '輸入活動名稱',
+          'date': '{{date}} 的 {{time}}',
+          'address-label': '位置',
+          'date-tbd': '日期尚待決定',
+          'description-placeholder': '向訪客多加介紹本次活動，請勿超過 300 個字元。',
+          'name-label': '活動名稱',
+          'location-tbd': '地點尚待決定',
+          'from-date': '從{{date}} {{time}}',
+          'description-label': '說明（選填）',
+          'to-date': '到{{date}} {{time}}'
+        },
+        'import-images-loading-text': '載入您的影像......',
+        'business-location': {
+          'search-tip': '您稍後隨時都可以變更該地點。',
+          'optional-label': '選填',
+          'subline': '如果您的業務沒有實體位置，請 <span class=\'link-button\' data-hook=\'no-address-skip\' ng-click=\'$ctrl.skip()\'> 略過 </span> 這個欄位。',
+          'input-placeholder': '輸入您的地址',
+          'input-placeholder-singleEvent': '輸入地址',
+          'label-singleEvent': '您的活動地點為何？',
+          'input-label': '您的 <br> 業務所在 <br> 何處？'
+        },
+        'business-card-editable': {
+          'email': {
+            'label': '電子郵件'
+          }
+        },
+        'general': {
+          'copyright-message': '©{{YEAR}} by {{BUSINESS_NAME}}. Proudly created with Wix.com'
+        },
+        'maybe-later': '可以在稍後進行',
+        'import-site-legal': {
+          'content-imported-from': '匯入內容來源：',
+          'next-button': '匯入',
+          'and': '和',
+          'review-images': '檢視圖片',
+          'title': '將圖片和文字匯入您的新網站',
+          'confirm-message': '點選「下一步」即表示您確認本身有權或經授權可用所選的內容，且能承擔所有使用責任。',
+          'skip-button': '不，謝謝',
+          'confirm-message2': '點選「匯入」即表示您確認本身有權或經授權可用所選的內容，且能承擔所有使用責任。',
+          'title2': '匯入圖片至新網站',
+          'review-images2': '檢視圖片',
+          'google': 'Google 商家資訊',
+          'sub-title2': 'ADI 在 {{sources}} 找到線上內容。',
+          'facebook': 'Facebook 專頁',
+          'website': '目前網站'
+        },
+        'blocked-category': {
+          'back-button': '前往編輯器',
+          'description': '編輯器有超過 500 個吸睛範本可供選擇，還有 1000 多個進階設計功能可以輕易拖放，是您的最佳選擇。',
+          'title': '編輯器是您的最佳選擇'
+        },
+        'contentExperiment': {
+          'service': {
+            'Bookings': '接受預約和預約',
+            'GetSubscribers': '增加訂閱者',
+            'Blog2': '建立部落格',
+            'Blog': '建立部落格',
+            'Stores': '網路銷售'
+          }
+        },
+        'logo': {
+          'uploading': '上傳中......',
+          'error': '糟糕。它沒有載入。請再試一次',
+          'edit': '編輯標誌',
+          'upload': '上傳<br>標誌',
+          'remove': '移除',
+          'add': '新增商標',
+          'replaceLogo': '更換商標',
+          'replace': '更換'
+        },
+        'search-confirm': {
+          'details': 'Wix ADI 將在線上搜尋為您的網站收集資訊，這樣您將可以在上線前全部檢閱和編輯內容。',
+          'title-old': 'Wix ADI 想要瞭解您：\n{{ businessName }}',
+          'details2': '您將可以在上線前審查和編輯一切。',
+          'details1': 'Wix ADI 將從在公開網際網路資源\n收集資訊開始。',
+          'subline': '沒有您的審查和核准，任何內容都不會在線上發佈。',
+          'title': '幫助 Wix ADI <br /> 更加認識：<br />{{ businessName }}'
+        },
+        'service': {
+          'Blog': '部落格',
+          'GetSubscribers': '使用者訂閱',
+          'Bookings': '線上預約預約',
+          'Stores': '網路商店',
+          'title': '您的網站 <br/> 需要其中的 <br/> 任何功能嗎？'
+        },
+        'images-selection': {
+          'select-all': '全選',
+          'title': '匯入圖片至新網站',
+          'deselect-all': '取消選擇全部'
+        },
+        'skip-button': '略過',
+        'import-site-content': {
+          'address-does-not-exist': '輸入您的網址，例如 www.sitename.com然後再試一次。',
+          'sublabel': '如果您已有網站，請輸入位址，以便 ADI 可以匯入您的文字和圖片。',
+          'address-message': '輸入您目前的網址',
+          'address-could-not-found': 'ADI 無法從此網站匯入內容略過此欄位以繼續。',
+          'title': '想要從 <br> 您目前的網站 <br> 匯入內容嗎？'
+        },
+        'tour': {
+          'logoExtraction': {
+            'step3000': {
+              'title': '想要用您的商標製作調色盤嗎？'
+            }
+          }
+        },
+        'import-youtube-url': {
+          'channel-does-not-exist': '此頻道未顯示。請再次檢查網址，然後再試一次。 '
+        },
+        'start': {
+          'button': '开始'
+        },
+        'loading-message': '星際搜尋執行中...',
+        'import-button': '匯入',
+        'no-images': '找不到要匯入的影像。',
+        'skip-this-step': '略過',
+        'import-content': {
+          'skip-button-name': '略過',
+          'skip-content': '這部分如果您還沒有網站。'
+        },
+        'next-button': '下一步',
+        'back-button': '返回',
+        'youtube-channel': {
+          'placeholder': '貼上您的 YouTube 頻道網址',
+          'label': '是否要在您的網站上同步 YouTube 頻道？'
+        },
+        'cancel-button': '取消'
+      },
+      'viewer': {
+        'contact-form': {
+          'attributes': {
+            'validationErrorMessage': '請填寫所有必填欄位。',
+            'nameFieldLabel': '姓名',
+            'emailFieldLabel': '電子郵件',
+            'subjectFieldLabel': '主旨',
+            'errorMessage': '請提供有效的電子郵件',
+            'successMessage': '系統已成功傳送詳細資料！',
+            'messageFieldLabel': '訊息',
+            'phoneFieldLabel': '電話',
+            'submitButtonLabel': '傳送',
+            'addressFieldLabel': '地址'
+          }
+        },
+        'drop-down-menu': {
+          'moreButtonLabel': '更多'
+        }
+      },
+      'overlay': {
+        'actions': {
+          'inbox': '開啟收件匣',
+          'duplicate': '重複',
+          'move': '移至...',
+          'change-opacity-other': '更多...',
+          'open-media': '更換',
+          'delete': '刪除',
+          'override-font-size': '重新調整文字大小',
+          'logo-size': '大小',
+          'crop': '裁切',
+          'gallery-type': '變更圖庫',
+          'designs': '設計',
+          'design': '設計',
+          'edit-tooltip': '開始自訂您的網站',
+          'toggle-header-menu': '開啟功能表',
+          'navigate-to': '導航至',
+          'hide': '隱藏',
+          'set-map-style': '設定地圖樣式',
+          'change-opacity': '透明度',
+          'colors': '顏色',
+          'edit-pages': '管理頁面',
+          'focus': '聚焦',
+          'organize-gallery': '組織媒體',
+          'list-item-to-page': '項目至頁面',
+          'copy': '複製',
+          'rename': '重新命名',
+          'upgrade-chat': '升級聊天',
+          'link-to': '連結至...',
+          'edit-seo': 'SEO',
+          'override-color': '覆寫顏色',
+          'settings': '設定',
+          'delete-chat': '刪除',
+          'styles': '設計',
+          'manage': '提交',
+          'edit-address': '地址',
+          'scroll-effect': '捲動效果',
+          'edit': '編輯',
+          'move-down': '往下移動',
+          'edit-media': '調整',
+          'move-up': '往上移動',
+          'edit-menu': '編輯選單'
+        },
+        'main-button-manage-tpa': '管理{{tpa}}',
+        'messages': {
+          'reset-item': {
+            'message': '這項目的文字無法閱讀。',
+            'click': '重設顏色'
+          },
+          'reset-section': {
+            'message': 'Text in this section is not readable.'
+          },
+          'color-not-readable': '<p>無法讀取此欄位。<br/><a ng-click=\'$ctrl.setColor(action, -1)\' href="">復原</a></p>',
+          'edit-site-color': '編輯網站顏色',
+          'apply-to-all': '套用至所有列出的項目'
+        },
+        'main-button-edit-footer': '編輯頁尾',
+        'main-button-designs': '變更設計',
+        'main-button-tpa-settings': '設定',
+        'main-button-edit': '編輯欄位',
+        'main-button-edit-header': '編輯頁首'
+      },
+      'builder': {
+        'section-background': {
+          'image-settings': '圖片設定',
+          'upload': {
+            'gallery': '圖庫',
+            'image': '圖片',
+            'video': '影片'
+          },
+          'background-settings': {
+            'image': {
+              'position': {
+                'right': '靠右對齊',
+                'bottom': '底部',
+                'left': '靠左對齊',
+                'top': '頂端',
+                'bottom_left': '左下',
+                'center': '置中',
+                'top_right': '右上',
+                'bottom_right': '底部右方',
+                'top_left': '左上'
+              },
+              'parallax-paragraph': '<a ng-click="$ctrl.goToPreview()" data-hook="goto-preview">請預覽網站</a>，檢視<br />此效果。',
+              'title': '圖片位置',
+              'lower-title': '圖片位置',
+              'body': '選擇要顯示此圖片的<br/>部分。'
+            }
+          },
+          'gallery-settings': '組織圖片',
+          'panel-paragraph-text': 'Click to select your favorite background.',
+          'upload-button': '上傳背景',
+          'categories': {
+            'color': '顏色',
+            'pattern': '圖樣',
+            'media': '媒體'
+          },
+          'panel-headline-text': '圖樣',
+          'show-background': '顯示背景',
+          'panel-headline-text-list': '清單背景',
+          'panel-headline-text-header': '頁首背景',
+          'pattern-settings': '變更色彩'
+        },
+        'permissions-panel': {
+          'password': {
+            'placeholder': '設定密碼',
+            'description': '密碼應該為 1-15 個字元，不能有特殊字元（%、&、#等）。',
+            'label': '密碼是什麼？'
+          },
+          'page-viewer': {
+            'members': {
+              'label': '網站會員',
+              'button': '瞭解更多',
+              'description': '訪客需要註冊才能查看此網頁。'
+            },
+            'password': {
+              'button': '瞭解更多',
+              'label': '密碼持有人',
+              'description': '有密碼的訪客可以瀏覽此網頁。'
+            },
+            'all': {
+              'button': '瞭解更多',
+              'label': '每個人',
+              'description': '每個人都可以瀏覽此網頁。'
+            },
+            'button': '瞭解更多',
+            'label': '誰可以瀏覽此網頁',
+            'description': '此網頁僅限會員使用。每位會員都必須登入才能瀏覽他們的帳戶資訊。'
+          },
+          'member-access': {
+            'label': '哪些會員有存取權？',
+            'all': {
+              'label': '所有會員'
+            },
+            'selected': {
+              'label': '只有選擇的會員'
+            }
+          },
+          'member-roles': {
+            'role-admin': {
+              'label': '管理員'
+            },
+            'label': '從您的會員身份中選擇',
+            'cta': '新增身份'
+          },
+          'pricing-plans': {
+            'label': '有定價方案的會員',
+            'description': '安裝定價方案並允許使用者付款訂閱取得網頁存取權。',
+            'new-plan': {
+              'cta': '建立新方案'
+            },
+            'add': {
+              'cta': '新增定價方案'
+            }
+          },
+          'manage-members': {
+            'cta': '管理網站會員'
+          },
+          'signup-settings': {
+            'cta': '管理註冊設定'
+          },
+          'title': '網頁權限'
+        },
+        'site-menu': {
+          'view-published-site': '查看己發佈的網站',
+          'page-title': {
+            'BandsInTown_Widget': '巡迴日期',
+            'RestaurantsReservations_Widget': '訂位',
+            'Events_Multiple': '活動',
+            'Events': '活動',
+            'Events_Single': '活動',
+            'Video_Widget': '影片',
+            'Music_Widget': '音樂',
+            'Instagram_Widget': 'Instagram',
+            'Html_Embed': 'Html',
+            'Forum': '論壇'
+          },
+          'history': '網站歷史',
+          'start-new-site': '製作新網站',
+          'view-live': '檢視網站',
+          'change-business-details': 'Update Website Type',
+          'news': '新聞和更新',
+          'get-feedback': '取得回饋',
+          'feedback': '傳送回饋給我們',
+          'seo-wiz': '在 Google 上曝光',
+          'hire': {
+            'a': {
+              'professional': '雇用網路專業人員'
+            }
+          },
+          'my-dashboard': '我的管理介面',
+          'site-dashboard': '管理介面',
+          'settings': '設定',
+          'connect-domain': '連線網域'
+        },
+        'section-override-warning': {
+          'animations': '其他欄位會顯示不同的動畫。',
+          'font-size': '其他欄位會顯示不同的字型大小。',
+          'replace-sections': ' <a data-hook=\'section-override-link\' href="" ng-click="$ctrl.overrideSections()">套用此樣式至</a>所有欄位。',
+          'success': '系統會將該樣式套用至所有欄位。',
+          'scroll-type': '其他欄位會顯示不同的捲動效果。'
+        },
+        'sections': {
+          'Accessibility': '無障礙政策',
+          'JobApplication': '工作應徵',
+          'Portfolio': '作品集',
+          'OpeningHours': '營業時間',
+          'Gallery': '圖庫',
+          'BookingsTimetable': '時間表',
+          'Feedback': '意見回饋表單',
+          'Welcome': '歡迎',
+          'Project': '專案',
+          'Stores_Slider_Gallery_Widget': '產品滑桿',
+          'Chat_Widget': '聊天',
+          'header': '頁首',
+          'SalesLead': '潛在顧客',
+          'SubmitTestimonials': '推薦表單',
+          'Widget': '標題',
+          'Feature': '功能',
+          'Subscribe_Lightbox': '訂閱',
+          'Video': '影片',
+          'StickySocialBar': '社交工具列',
+          'Files': '檔案',
+          'Past_Events': '過去的活動',
+          'Blog2_Custom_Feed_Widget': '部落格動態消息',
+          'ScheduleItem': '行程',
+          'PriceQuote': '報價',
+          'DeviantArt_Widget': 'DeviantArt',
+          'Contact': '連絡人',
+          'RestaurantsOrders': '點餐',
+          'GetSubscribers_Widget': '訂閱',
+          'Stores_Product_specific_Widget': '精選產品',
+          'Support': '支援',
+          'BandsInTown_Widget': '巡迴日期',
+          'CV': '履歷表',
+          'Events_Multiple': '活動清單',
+          'SignUp': '註冊表單',
+          'Events_Single': '單一活動',
+          'FAQ': '常見問題',
+          'Instagram_Widget': 'Instagram',
+          'Service': '服務',
+          'blank': '空白',
+          'ProGallery_Widget': '媒體圖庫',
+          'RestaurantsReservations_Widget': '訂位',
+          'Podcast': 'Podcast',
+          'Event': '活動',
+          'List': '清單',
+          'Imprint': 'Imprint',
+          'Html': '內嵌',
+          'Infographics': 'Infographics',
+          'Quote': '報價單',
+          'News': '新聞',
+          'Stores': '商店',
+          'TeamMember': '團隊成員',
+          'Privacy_Lightbox': '隱私',
+          'Text': '文字',
+          'Client': '客戶',
+          'Promotion_Lightbox': '促銷',
+          'Stores_Grid_Gallery_Widget': '產品圖庫',
+          'Blog_Post_Gallery': '部落格文庫',
+          'Welcome_Lightbox': '歡迎',
+          'Legal_Lightbox': '法律',
+          'Bookings_Widget': '服務清單',
+          'About': '關於',
+          'Video_Widget': '影片播放器',
+          'RestaurantsMenus': '菜單',
+          'from-the-blog': '自部落格',
+          'Price': '價目表',
+          'Product': '產品',
+          'Testimonial': '推薦',
+          'Contact_Lightbox': '連絡人',
+          'footer': '頁尾',
+          'Music_Widget': '音樂播放器',
+          'Image': '圖片'
+        },
+        'menu-panel': {
+          'panel-title': '網站選單',
+          'actions': {
+            'delete': '移除項目',
+            'link-to': '連結至......',
+            'set-as-home-page': '設為首頁',
+            'main-page': '設定主要項目',
+            'manage-pages': '管理頁面',
+            'rename': '重新命名項目',
+            'subpage': '設定子項目',
+            'show': '顯示',
+            'hide': '隱藏項目'
+          },
+          'panel-back-button': '返回',
+          'panel-description': '整理您的選單。新增項目、拖曳以重新排列等等。若要新增網頁或複製，請前往 <a>管理網頁</a>。',
+          'panel-add-button': '新增選單項目',
+          'empty-name-error': '網頁名稱不得為空白。',
+          'new-menu-item': '新增項目',
+          'input-placeholder': '命名此項目',
+          'help-tooltip': 'Help'
+        },
+        'html-editor': {
+          'code-text-box': {
+            'label': '貼上您的程式碼（僅限 HTTPS）',
+            'placeholder': '貼在這裡...'
+          },
+          'select-type_Website_label': '網站',
+          'app': {
+            'name': '內嵌 HTML',
+            'description': '從其他網站新增 HTML 程式碼或網頁。',
+            'popup': {
+              'subtitle': '點擊設定以新增 HTML 程式碼或網址。',
+              'title': '您有 HTML 內嵌'
+            }
+          },
+          'section': {
+            'name': '內嵌章節',
+            'settings-button-label': '設定'
+          },
+          'url-text-box': {
+            'label': '貼上網址',
+            'validate-error': '使用此結構輸入有效的 HTTPS 網址：https://',
+            'placeholder': '貼在這裡......'
+          },
+          'analytics': {
+            'text': '要新增 Facebook Pixel、Google Analytics 等，<a href=\' https://www.wix.com/dashboard/{{MSID}}/manage-website/embeds/?referralInfo=ADI_embed_settings\' target=\'_blank\'> 請至追蹤工具與分析。</a>'
+          },
+          'height-slider': {
+            'label': '高度'
+          },
+          'title': 'HTML 設定',
+          'select-type_HTML_code_label': 'HTML 程式碼',
+          'width-slider': {
+            'label': '寬度'
+          },
+          'select-type': '內嵌類型'
+        },
+        'section-design': {
+          'panel-footer-text': '要為頁尾選擇新的版面配置，<br />請前往<a ng-click="$ctrl.goToDesignMode()" data-hook="goto-site-design">主題</a>，變更整個網站的設計。',
+          'TPA_NAME': {
+            'Stores': '網路商店',
+            'Stores_Grid_Gallery_Widget': '產品圖片集',
+            'Blog': '部落格',
+            'RestaurantsMenus': '菜單',
+            'GetSubscribers_Widget': '增加訂閱者',
+            'Blog_Post_Gallery': '部落格',
+            'DeviantArt_Widget': 'DeviantArt',
+            'Loyalty': '酬賓計劃',
+            'Events_Single': '單一活動',
+            'PaidPlans': '定價方案',
+            'Challenges_SingleChallenge': '程式網頁',
+            'GiftCard': '禮品卡',
+            'Challenges': '程式',
+            'Stores_Slider_Gallery_Widget': '產品滑標',
+            'PhotoAlbums': '相簿',
+            'Events_Multiple': '活動清單',
+            'Blog2_Custom_Feed_Widget': '部落格動態消息',
+            'ProGallery_Widget': '專業圖庫',
+            'RestaurantsOrders': '訂餐',
+            'Bookings': '立即預訂',
+            'BandsInTown_Widget': '巡迴日期',
+            'Music_Widget': '音樂播放器',
+            'Blog2': '部落格',
+            'Video_Widget': '影片播放器',
+            'Forum': '論壇',
+            'Stores_Product_Widget': '產品',
+            'Groups_SingleGroup': 'Group page',
+            'Chat': '聊天',
+            'RestaurantsReservations_Widget': '訂位',
+            'Groups': '群組',
+            'Stores_Product_specific_Widget': '精選產品',
+            'Members': '會員專區'
+          },
+          'menu': {
+            'animations': '動畫',
+            'font': '字型大小',
+            'font-alignment': '文字設定',
+            'headerbg': '頁首',
+            'height': '高度',
+            'listbg': '清單',
+            'color': '顏色',
+            'overlay': 'Overlay',
+            'media': '媒體'
+          },
+          'panel-headline-text': '區段設計',
+          'panel-headline-text-header': '網站頁首設計',
+          'panel-header-text-lightbox': '挑選燈箱設計並自訂之。<br />請前往 <a ng-click="$ctrl.goToDesignMode()" data-hook="goto-site-design">主題</a>，變更整個網站的設計。',
+          'customize-design': '自訂欄位設計',
+          'mobile-headline-text': '按一下選擇最喜歡的行動裝置欄位版面配置。',
+          'panel-headline-text-footer': '網站頁尾設計',
+          'panel-header-text-tpa': '點擊選擇您最喜歡的 {{TPA_NAME}} 設計。',
+          'change-colors': '變更顏色',
+          'panel-header-text': '自訂欄位設計，或嘗試新的版面配置。<br />請前往 <a ng-click="$ctrl.goToDesignMode()" data-hook="goto-site-design">主題</a>，變更整個網站的設計。',
+          'panel-header-text-header': '您所有網頁都會顯示您的頁首。<br/>請選擇您喜歡的設計，然後自訂其內容。',
+          'panel-headline-text-lightbox': '燈箱設計'
+        },
+        'apps-panel': {
+          'app': {
+            'description': {
+              'RestaurantsReservations_Widget': '讓用餐者隨時在線上訂位。',
+              'Blog': '在部落格上分享<br>您熱愛的所有事物。',
+              'Instagram_Widget': '顯示您的 Instagram 相片和影片。',
+              'Html_Embed': '從其他網站內嵌網頁、應用程式及小工具。',
+              'RestaurantsOrders': '線上接受餐廳 訂餐',
+              'GiftCard': '讓顧客寄送個人化禮品卡。',
+              'Groups': '依照共同興趣來發展社群。',
+              'Forum': '在您的網站上建置一個線上社群。',
+              'Bookings': '接受線上預訂。',
+              'Chat_Widget': '隨時隨地與網站訪客聊天。',
+              'Stores': '自您的網站銷售產品和數位下載。',
+              'Music_Widget': '直播並免費鎖售您的音樂。',
+              'Challenges': '建立並販售逐步訓練計畫。',
+              'Events_Single': '建立活動、收集回覆和銷售門票。',
+              'Members': '讓會員在您的網站上建立自己的私人帳戶。',
+              'StickySocialBar': '讓您的訪客在社交網站上按讚、分享並追蹤您。',
+              'RestaurantsMenus': '建立專業菜單。',
+              'PhotoAlbums': '以自訂相簿分享並販售作品。',
+              'Restaurants': '線上接受訂餐及訂位。',
+              'Events_Multiple': '建立活動、收集回覆和銷售門票。',
+              'Blog2': '有關於<br>您熱愛的一切都可貼文。',
+              'Loyalty': '讓顧客賺取點數並兌換獎勵。',
+              'PaidPlans': '銷售產品、服務和內容的付費訂閱方案。',
+              'Video_Widget': '展示、串流並銷售您的影片。',
+              'BandsInTown_Widget': '在網站上顯示即將到來的巡迴日期。'
+            },
+            'title': {
+              'StickySocialBar': '社交工具列',
+              'Loyalty': '酬賓計劃',
+              'RestaurantsMenus': '菜單',
+              'Instagram_Widget': 'Instagram 動態消息',
+              'GiftCard': '禮品卡',
+              'Forum': '論壇',
+              'BandsInTown_Widget': 'Bandsintown',
+              'Video_Widget': '影片',
+              'Html_Embed': '內嵌 HTML',
+              'Restaurants': '餐廳',
+              'RestaurantsOrders': '訂餐',
+              'RestaurantsReservations_Widget': '訂位',
+              'PaidPlans': '定價方案',
+              'Groups': '群組',
+              'Events_Multiple': '活動',
+              'PhotoAlbums': '相簿',
+              'Events': '活動',
+              'Blog': '部落格',
+              'Events_Single': '單一活動',
+              'Members': '會員專區',
+              'Blog2': '部落格',
+              'Chat_Widget': '聊天',
+              'Bookings': '預訂',
+              'Challenges': '網路程式',
+              'AllMembers': '會員',
+              'Music_Widget': '音樂',
+              'Stores': '網路商店'
+            },
+            'subtitle': {
+              'Groups': 'Create groups for people with shared interests.\n'
+            }
+          },
+          'manage-app': '管理',
+          'open-app': '開放',
+          'add-more': '新增',
+          'footer': {
+            'link': '前往編輯器',
+            'text': '要找更多應用程式嗎？'
+          },
+          'title': '應用程式',
+          'subtitle': '使用強大的應用程式提升網站。',
+          'settings': '設定',
+          'remove': '刪除',
+          'loader': '正在載入應用程式 ...',
+          'recommended-label': '推薦'
+        },
+        'field-editor': {
+          'single': {
+            'copyright-message': '版權訊息',
+            'subtitle': '子標題',
+            'form': '表單',
+            'media': '媒體',
+            'menu': '網站選單',
+            'button': '按鈕',
+            'description': '說明',
+            'logo': '商標',
+            'email': '電子郵件',
+            'freeze-header': '凍結頁首',
+            'phone-number': '電話號碼',
+            'name': '姓名',
+            'map': '地圖',
+            'tagline': '標語',
+            'form-ce': '表單',
+            'site-email': '網站電子信箱',
+            'title': '標題',
+            'html': 'HTML',
+            'long': '段落',
+            'fax': '傳真',
+            'business-name': '商務名稱',
+            'address': '地址'
+          },
+          'social-title': '社交帳戶',
+          'list': {
+            'button': '按鈕',
+            'item': {
+              'title': '姓名',
+              'long': '說明'
+            }
+          },
+          'list-footer': '頁尾 {{text}}',
+          'social-paragraph': '更新社群連結',
+          'subscribe': '訂閱',
+          'list-item': '項目 {{text}}',
+          'list-header': '頁首 {{text}}',
+          'login-title': '會員登入列'
+        },
+        'fake-browser2': {
+          'choose-domain': '連線網域'
+        },
+        'pages-panel': {
+          'sections': {
+            'settings': {
+              'rename': '重新命名網頁',
+              'edit': '編輯',
+              'delete': '刪除',
+              'design': '設計',
+              'manage': '管理'
+            }
+          },
+          'settings': {
+            'set-as-homepage': '設為首頁',
+            'duplicate': '重複',
+            'show': '顯示',
+            'hide': '不要索引頁面',
+            'subpage': '子頁面',
+            'page-permissions': '網頁權限',
+            'page-seo': 'SEO 入門',
+            'rename': '重新命名',
+            'main-page': '主頁',
+            'delete': '刪除'
+          }
+        },
+        'manage-tpa-sub-menu': {
+          'label': {
+            'photoalbums': '相簿',
+            'store': '商店',
+            'orders': '訂餐',
+            'video': '影片',
+            'music': '音樂',
+            'challenges': '網路程式',
+            'blog2': '部落格',
+            'members': '會員專區',
+            'bookings': '預約',
+            'reservations': '訂位',
+            'blog': '部落格',
+            'paidplans': '定價方案',
+            'all-apps': '所有應用程式',
+            'stickysocialbar': '社交工具列',
+            'groups': '群組',
+            'events': '活動',
+            'menus': '菜單',
+            'ascend': 'Ascend 商務工具',
+            'loyalty': '酬賓計劃',
+            'gift card': '禮品卡',
+            'event': '活動',
+            'forum': '論壇'
+          }
+        },
+        'lightbox': {
+          'settings': {
+            'sub-title': '自訂何時為網站訪客顯示您的燈箱。',
+            'isActive-disabled_warning': 'You can’t have more than one lightbox set to automatically show on a page.',
+            'show-on-pages_label': '在哪些網頁上？',
+            'select-page_sub-title': '燈箱在訪客開啟第一個選擇的網頁時顯示。',
+            'select-page_title': '選擇網頁',
+            'delay_label': '延遲（秒）',
+            'title': '燈箱設定',
+            'name_label': 'Lightbox Name',
+            'select-page-disabled_tooltip': 'You have another lightbox set to automatically show on this page.',
+            'isActive_label': '自動顯示燈箱',
+            'page-settings_label': 'Lightbox Page Settings',
+            'select-page_all-pages': '所有網頁',
+            'page-settings': {
+              'tooltip': 'Automatically show a lightbox on any page. Visitors see it one time, on the first page they open.'
+            }
+          },
+          'site-menu-warning': 'Note: Lightboxes are not displayed on your site menu.'
+        },
+        'open-site-loader': {
+          'message17': '',
+          'message7': 'Swap out a photo for a video or image gallery wherever and whenever you like.',
+          'video-title': '載入中…',
+          'message13': '',
+          'message20': '',
+          'message3': 'New design suggestions are automatically generated for every Section after you edit text, images or video.',
+          'message1': 'It’s font-tastic! Choose from tons of beautifully crafted fonts designed to fit your style.',
+          'message19': '',
+          'message14': '',
+          'message8': 'Want your site to get found on Google? Check out the SEO settings.',
+          'message10': 'Upgrade to connect a unique domain and publish your site ad-free.',
+          'message18': '',
+          'message4': 'When you\'re ready, click Publish to share your site with the world. It only takes a second.',
+          'message15': '',
+          'message5': 'There\'s so much you can do. Add a store, blog, or start taking bookings from your site.',
+          'message11': '',
+          'message16': '',
+          'message12': '',
+          'message6': 'Don\'t need that subtitle? Hide it! You can hide or show any field in any Section.',
+          'message9': 'Look stunning on any screen! ADI adapts your desktop design to mobile automatically.',
+          'message2': 'The possibilities are endless! Play around with different design options for each section of your website.'
+        },
+        'button-editor': {
+          'button': '連結',
+          'add-button': '新增按紐'
+        },
+        'publish-disabled': {
+          'contributor': {
+            'tooltip': 'You don\'t have permission to publish this site.'
+          }
+        },
+        'edit_mode': {
+          'mobile': '行動裝置',
+          'desktop': '桌面'
+        },
+        'seo-panel': {
+          'page-title': {
+            'label': '標題標籤（用於搜尋結果）'
+          },
+          'title': 'SEO 入門',
+          'keywords': {
+            'label': '關鍵字'
+          },
+          'page-url': {
+            'label': '頁面網址'
+          },
+          'description': {
+            'label': '中繼描述（用於搜尋結果）'
+          }
+        },
+        'manage-tpa-Members': '管理會員專區',
+        'manage-tpa-Groups': '管理群組',
+        'manage-tpa-Bookings': '管理預訂',
+        'progress-bar': {
+          'step-message': {
+            'finishing-touches': '新增最後修飾',
+            'adding-application': '新增{{type}}應用程式',
+            'online-content': '匯入線上內容',
+            'adding-section': '新增{{type}}欄位',
+            'building-homepage': '正在新增頁面……',
+            'sc-adding-site-colors': '新增網站顏色',
+            'adding-applications': '載入您的功能...',
+            'sc-adding-site-fonts': '變換網站字型風格',
+            'sc-adding-header-and-footer': '新增頁首及頁尾',
+            'adding-page': '新增 {{pageTitle}} 頁面',
+            'sc-arranging-text-images': '安排文字和圖片',
+            'finishing-touches2': '正在做最後處理……',
+            'header-and-footer': '安排頁首及頁尾'
+          }
+        },
+        'empty-page-title': '新增欄位',
+        'add-section': '新增欄位',
+        'media-editor': {
+          'media-bg-warning': '想要在圖片後面顯示一些色彩嗎？請降低圖片不透明度。',
+          'image-position': {
+            'title': '圖片位置'
+          },
+          'edit-replace-button': '編輯和更換',
+          'opacity-warning': '沒有在您的網頁上看到這個影像嗎？<a data-hook=\'opacity-warning-link\' ng-click=\'$ctrl.resetOpacity()\'>重設</a>'
+        },
+        'top-bar': {
+          'add-app': '應用程式',
+          'preview': {
+            'back-to-edit': '返回 ADI 編輯器',
+            'mobile': '行動裝置預覽模式',
+            'from-intro-msg': '要開始自訂，請點選編輯網站',
+            'preview-msg': '您目前在預覽模式中',
+            'desktop': '桌上型電腦預覽模式'
+          },
+          'add-section': '新增欄位至頁面'
+        },
+        'manage-apps-small': '應用程式',
+        'layout-control': {
+          'customize': 'Customize',
+          'change-design': '編輯欄位設計'
+        },
+        'account': {
+          'new-site-link': 'https://www.wix.com/new/vertical?ref=ADI',
+          'billing': '帳單和付款',
+          'settings': '帳號設定',
+          'my-sites-link': 'https://www.wix.com/account/sites',
+          'my-sites': '我的網站',
+          'settings-link': 'https://www.wix.com/account/settings'
+        },
+        'logoExtraction': {
+          'step3200': {
+            'newPaletteFromLogo': {
+              'content': '這是 ADI<br/> 專為您製作的調色盤',
+              'title': ''
+            },
+            'button': '直接使用這些顏色',
+            'content': '這是 ADI<br/> 專為您製作的調色盤',
+            'title': '',
+            'skip': '不，謝謝'
+          },
+          'step3000': {
+            'button': '建立調色盤',
+            'skip': '不，謝謝',
+            'title': '',
+            'content': '想要用您的商標<br/>製作調色盤嗎？'
+          },
+          'step3100': {
+            'title': '',
+            'content': '建立調色盤中 ......'
+          }
+        },
+        'pages': '網頁',
+        'merge': '合併頁面',
+        'switch-color': {
+          'panel-headline-text': '欄位顏色',
+          'panel-paragraph': '要為此欄位選擇您喜愛的顏色組合，<br />請前往<a ng-click="$ctrl.goToColorationPanel()" data-hook="goto-site-colors">顏色</a>，變更網站的調色盤。',
+          'panel-paragraph-only-one-option': '此設計沒有任何可供選擇的顏色。<br /><a ng-click="$ctrl.goToDesignPanel()" adi-automation="no-color-switch-preset" data-hook="goto-switch-preset">請選擇其他設計</a>，看看更多顏色選項。'
+        },
+        'add-page-members-area': {
+          'title': '會員專區'
+        },
+        'upgrade-dropdown': {
+          'bullet-2': '享受無限頻寬和更多儲存空間',
+          'get-yearly-unlimited': '取得年付 Unlimited 方案',
+          'bullet-1-new': '取得免費網域,連線您的網站',
+          'bullet-3-new': '連線 Google 分析',
+          'sale-title': '限時優惠：立即升級熱門進階方案<br>以節省{{text}}%的費用',
+          'bullet-2-new': '移除 Wix 廣告',
+          'sale-upto-cta': 'Upgrade & Save Up to 50%',
+          'title': '升級至年付 Unlimited 方案節省費用！',
+          'compare-plans': '比較方案',
+          'sale-title-new': '限時優惠：立即升級並取得 {{text}}％ 的進階方案優惠',
+          'title-new': '升級進階以取得更多',
+          'sale-upto-title': 'Limited Time Offer: Upgrade Now & Save up to 50% on Premium Plans',
+          'upgrade-now': '立即升級',
+          'upgrade-save': '升級並節省{{text}}%費用',
+          'bullet-3': '新增 Google Analytics（分析）至您的網站',
+          'bullet-1': '取得免費網域,連線您的網站'
+        },
+        'design-panel': {
+          'title': '主題'
+        },
+        'manage-apps|abTranslate_1|ABTestManage': 'Apps',
+        'add-section-more': '更多欄位',
+        'fake-browser': {
+          'suggest-domain-button': '連線您的網域',
+          'choose-domain': '連線您的網域',
+          'use-advanced-editor': '前往編輯器',
+          'suggest-domain-label': '<span ng-click="$ctrl.openConnectDomainDialog()" title="{{domainTitle}}" class="suggest-domain-address">{{domain}}</span> <span class="suggest-domain-message"> 可以使用。</span>',
+          'optimize-design': '最佳化設計',
+          'manage-pages': '管理網頁'
+        },
+        'preview-shows-entire-image': 'SHOWS ENTIRE IMAGE',
+        'manage-tpa-Challenges': '管理程式',
+        'save': '儲存',
+        'adi-assistant': {
+          'hire': {
+            'a': {
+              'professional': '為您的網站雇用網路專業人員'
+            }
+          },
+          'title': '需要協助？'
+        },
+        'template-translation-drop-down': {
+          'preview-translation': '預覽',
+          'send-translation': '傳送至翻譯服務'
+        },
+        'manage-tpa-RestaurantsMenus': '管理菜單',
+        'list-items-title': '清單項目',
+        'back-button': '返回',
+        'manage-tpa-button': '管理',
+        'preview-recommended': '推薦',
+        'manage-apps': '管理應用程式',
+        'edit-section-button': '編輯',
+        'manage': '管理',
+        'manage-tpa-Stores': '管理商店',
+        'page-from-item': '從此項目建立頁面',
+        'saving': '儲存中',
+        'social-panel': {
+          'title': '社交帳戶',
+          'link-input': {
+            'placeholder': '請貼上您的連結'
+          }
+        },
+        'preview-linked-page-content': '用於',
+        'preview-flags': {
+          'slideshow': '投影片放映',
+          'fix': '固定頁首'
+        },
+        'drop-target-hint': '將欄位拖曳至此處',
+        'manage-tpa-Loyalty': '管理酬賓計劃',
+        'add-section-basic': '元素',
+        'apps-sub-menu-label-add-new': 'Add an App',
+        'loading': '載入中',
+        'save-as-template': 'Save As Template',
+        'upgrade': '升級',
+        'section-name-in-menu': {
+          'title': '在選單中顯示名稱'
+        },
+        'add-page': '新增頁面',
+        'add-section-others': '選填',
+        'manage-tpa-PaidPlans': '管理定價方案',
+        'unmerge': '取消合併頁面',
+        'manage-tpa-GiftCard': '管理禮品卡',
+        'color-box': '方塊',
+        'manage-tpa-Chat_Widget': 'Wix 收件匣',
+        'manage-tpa-Blog': '管理部落格',
+        'manage-tpa-Events': '管理活動',
+        'drop-target-drag-over': '將欄位拖放至此處',
+        'manage-tpa-Forum': '管理論壇',
+        'preview-linked-content': '從',
+        'list-items-title-slideshow': '投影片項目',
+        'manage-tpa-PhotoAlbums': '管理相簿',
+        'empty-page-title-active': '太好了，您已準備就緒。',
+        'upgrade-banner': {
+          'label': '升級網站，即可移除 Wix 廣告',
+          'button': '立即升級'
+        },
+        'empty-page-sub-title-active': '只需拖放任何推薦的欄位即可。',
+        'preview': '預覽',
+        'manage-tpa-Blog2': '管理部落格',
+        'site': '網站',
+        'add-section-recommended': '推薦',
+        'add-section-form': '表單',
+        'mobile-panel-edit-notice': '您在行動裝置上變更的內容，皆不會影響網站在桌上型電腦上呈現的效果。',
+        'add-slide': '+ 新增投影片',
+        'publish': '發佈',
+        'design': '網站設計',
+        'empty-page-sub-title': '點選 + 圖示，即可輕鬆新增某些元素至讓您的網站更吸睛',
+        'design-label': '設計',
+        'saved': '已儲存',
+        'manage-tpa-RestaurantsOrders': '管理訂餐',
+        'add-section-lightbox': 'LIGHTBOX',
+        'manage-tpa': '管理{{TPA}}',
+        'apps': {
+          'label': 'Apps'
+        },
+        'design_description': '挑選您的網站主題並自行設計內容。'
+      },
+      'tip_content': {
+        'contact': {
+          'name': 'Rachel',
+          'profession': 'Wix Specialist'
+        },
+        'subscribe-tip': {
+          'add-mode': {
+            'content_template': 'Let visitors sign up to get your email updates. This is an important step in growing your contact list and building strong relationships with your customers.\r\n',
+            'footer_button': '知道了',
+            'title': 'You’re about to add a Subscribe section.\r\n'
+          }
+        },
+        'news-tip': {
+          'add-mode': {
+            'content_template': 'This is where you add all your News. Show visitors that you’re a knowledgeable professional - and keep them coming back with interesting & helpful content.',
+            'footer_button': '知道了',
+            'title': 'You’re about to add your News section.'
+          },
+          'edit-mode': {
+            'title': 'What does a great News section include?',
+            'content_template': '✓ Attention-grabbing title\n✓ Short, catchy description\n✓ A link to read more',
+            'footer_button': '知道了'
+          }
+        },
+        'special offers-tip': {
+          'edit-mode': {
+            'title': 'What does a great Special Offers section include?',
+            'footer_button': '知道了',
+            'content_template': '✓ Special offer name\n✓ Beautiful photos\n✓ Features & Benefits\n✓ A button to learn more'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Special Offers section.',
+            'content_template': 'This is where you tell people about your latest deals. Everyone loves a good sale!',
+            'footer_button': '知道了'
+          }
+        },
+        'services-tip': {
+          'add-mode': {
+            'footer_button': '知道了',
+            'title': 'You’re about to add your Services section.\n',
+            'content_template': '您的服務於此處列出。\n人們想知道您究竟有沒有他們要的東西。 '
+          },
+          'edit-mode': {
+            'title': 'What does a great Services section include?\n',
+            'footer_button': '知道了',
+            'content_template': '✓ Name of each Service\n✓ Benefits for your customer\n✓ Your best features\n✓ Information about pricing\n✓ A button so customers can sign up, learn more or get in touch'
+          }
+        },
+        'facilities-tip': {
+          'add-mode': {
+            'footer_button': '知道了',
+            'content_template': '您的設施於此處顯示。人們想知道您有沒有他們要的設施。所以，請別忘記描述特色與福利。',
+            'title': 'You’re about to add your Facilities section.'
+          },
+          'edit-mode': {
+            'title': 'What does a great Facility section include?',
+            'content_template': '✓ Facility name\n✓ Short description + opening hours (if relevant)\n✓ Beautiful photos\n✓ Features & benefits\n✓ A button to learn more',
+            'footer_button': '知道了'
+          }
+        },
+        'faq-tip': {
+          'add-mode': {
+            'footer_button': '知道了',
+            'content_template': 'This is where you answer your audience’s most frequently asked questions. People want to find answers to their questions as quickly as possible. ',
+            'title': 'You’re about to add your FAQ section.'
+          },
+          'edit-mode': {
+            'footer_button': '知道了',
+            'content_template': '✓ A list of 6-10 questions and answers\n✓ Simple layout with easy-to read font, color & size\n✓ A button so people can easily get in touch',
+            'title': 'What does a great FAQ section include?'
+          }
+        },
+        'resources-tip': {
+          'edit-mode': {
+            'title': 'What does a great Resources section include?',
+            'footer_button': '知道了',
+            'content_template': '✓ Attention-grabbing title\n✓ Short, catchy description\n✓ A link to read more'
+          },
+          'add-mode': {
+            'footer_button': '知道了',
+            'title': 'You’re about to add your Resources section.',
+            'content_template': 'This is where you add all your Resources. Show visitors that you’re a knowledgeable professional - and keep them coming back with interesting & helpful content.'
+          }
+        },
+        'articles-tip': {
+          'add-mode': {
+            'title': 'You’re about to add your Articles section.',
+            'content_template': 'This is where you add all your Articles. Show visitors that you’re a knowledgeable professional - and keep them coming back with interesting & helpful content.',
+            'footer_button': '知道了'
+          },
+          'edit-mode': {
+            'content_template': '✓ Attention-grabbing title\n✓ Short, catchy description\n✓ A link to read more',
+            'footer_button': '知道了',
+            'title': 'What does a great Articles section include?'
+          }
+        },
+        'welcome-tip': {
+          'edit-mode': {
+            'content_template': '✓ Your business name\n✓ Your logo \n✓ Beautiful image\n✓ Impact statement- Let everyone know in a breath what is great about your business. \ni.e The Most Delicious & Healthy Cupcakes Ever!\n✓ A button so customers can learn more',
+            'title': 'What does a great Welcome section include?',
+            'footer_button': '知道了'
+          },
+          'add-mode': {
+            'footer_button': '知道了',
+            'content_template': 'This is where you tell people what you or your business does. Be yourself, keep it simple, and show how you’re unique from everyone else. \r\n',
+            'title': 'You’re about to add your Welcome section.'
+          }
+        },
+        'resume-tip': {
+          'edit-mode': {
+            'title': 'What does a great Resume section include?',
+            'footer_button': '知道了',
+            'content_template': '✓ Work experience - include your job title, employers’ names & start-end dates\n✓ Educational background\n✓ Special accomplishments & achievements\n✓ A button so people can easily get in touch'
+          },
+          'add-mode': {
+            'footer_button': '知道了',
+            'content_template': 'This is where you show your relevant experience. Keep it concise and double-check for spelling errors.',
+            'title': 'You’re about to add your Resume section.'
+          }
+        },
+        'products-tip': {
+          'edit-mode': {
+            'content_template': '✓ Name of each product\r\n✓ Beautiful product shots\r\n✓ Benefits for your customer\r\n✓ Your best features\r\n✓ Pricing information\r\n✓ A button so customers can sign up, learn more or get in touch',
+            'footer_button': '知道了',
+            'title': 'What does a great Products section include?\r\n'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Products section.\r',
+            'footer_button': '知道了',
+            'content_template': '您提供的產品於此處列出。人們想知道您究竟有沒有他們要的東西。'
+          }
+        },
+        'classes-tip': {
+          'add-mode': {
+            'title': 'You’re about to add your Classes section.\n',
+            'footer_button': '知道了',
+            'content_template': '您的課堂於此處列出。\n人們想知道您究竟有沒有他們要的東西。 '
+          },
+          'edit-mode': {
+            'content_template': '✓ Name of each Class\n✓ Benefits for your customer\n✓ Your best features\n✓ Information about pricing\n✓ A button so customers can sign up, learn more or get in touch',
+            'footer_button': '知道了',
+            'title': 'What does a great Classes section include?\n'
+          }
+        },
+        'careers-tip': {
+          'add-mode': {
+            'title': 'You’re about to add your Careers section.',
+            'footer_button': '知道了',
+            'content_template': '您的所有職缺於此處顯示。求職者想知道您有的職缺，並了解為何您的公司是個好地方。'
+          },
+          'edit-mode': {
+            'title': 'What does a great Careers section include?',
+            'footer_button': '知道了',
+            'content_template': '✓ Job position\n✓ Responsibilities & requirements\n✓ A button for candidates to apply'
+          }
+        },
+        'features-tip': {
+          'add-mode': {
+            'title': 'You’re about to add a Features section.\r\n',
+            'content_template': 'This is where you describe the distinguishing characteristics of your business. Feel free to list as many features as you want - include both the basics and ones that set you apart from the competition.\r\n',
+            'footer_button': '知道了'
+          },
+          'edit-mode': {
+            'title': 'What does a great Features section include?\r\n',
+            'footer_button': '知道了',
+            'content_template': '✓ Name of feature\r\n✓ Benefits for your customer\r\n✓ A button so customers can sign up, learn more or get in touch'
+          }
+        },
+        'contact-tip': {
+          'edit-mode': {
+            'title': 'What does a great Contact section include?',
+            'content_template': '✓ Contact details - including email address, phone number & physical address\r\n✓ Contact form \r\n✓ Map',
+            'footer_button': '知道了'
+          },
+          'add-mode': {
+            'title': 'You’re about to add a Contact section.\n',
+            'content_template': 'This is where people go to get your contact information. We recommend giving customers a few different ways to reach you. \r',
+            'footer_button': '知道了'
+          }
+        },
+        'practices-tip': {
+          'edit-mode': {
+            'footer_button': '知道了',
+            'title': 'What does a great Practices section include?\n',
+            'content_template': '✓ Name of each Practice\n✓ Benefits for your customer\n✓ Your best features\n✓ Information about pricing\n✓ A button so customers can sign up, learn more or get in touch'
+          },
+          'add-mode': {
+            'footer_button': '知道了',
+            'content_template': '您的練習於此處列出。\n人們想知道您究竟有沒有他們要的東西。 ',
+            'title': 'You’re about to add your Practices section.\n'
+          }
+        },
+        'first-time-desktop-content-panel': '您能夠勾選或取消勾選圓形圖示，藉此顯示或隱藏元素。',
+        'projects-tip': {
+          'edit-mode': {
+            'title': 'What does a great Projects section include?\n',
+            'content_template': '✓ Name of your project\n✓ Beautiful images\n✓ Short description \n✓ A button to learn more',
+            'footer_button': '知道了'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Projects section.',
+            'content_template': 'This is where you display the projects you’re proudest of. Show potential clients what you\'re capable of.',
+            'footer_button': '知道了'
+          }
+        },
+        'team-tip': {
+          'add-mode': {
+            'title': 'You’re about to add your Team section.\r\n',
+            'content_template': 'This is where you introduce your team. Helping people get to know you and your team is a great way to build trust.',
+            'footer_button': '知道了'
+          },
+          'edit-mode': {
+            'title': 'What does a great Team section include?\r\n',
+            'content_template': '✓ Name of each employee and their title\r\n✓ Employee photos\r\n✓ Short descriptions including special honors, awards, degrees or what makes them excellent',
+            'footer_button': '知道了'
+          }
+        },
+        'volunteer-tip': {
+          'edit-mode': {
+            'title': 'What does a great Volunteer section include?',
+            'footer_button': '知道了',
+            'content_template': '✓ Position\n✓ Short description with relevant information\n✓ A button to get in touch'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Volunteer section.',
+            'content_template': 'This is where you add your volunteer opportunities. People want to know how they can get involved.',
+            'footer_button': '知道了'
+          }
+        },
+        'events-tip': {
+          'add-mode': {
+            'content_template': 'This is where you promote your upcoming events. Give people a sense of what the event’s about and make them feel like they can’t miss out. \r\n',
+            'title': 'You’re about to add your Events section.\r\n',
+            'footer_button': '知道了'
+          },
+          'edit-mode': {
+            'title': 'What does a great Events section include?\r',
+            'footer_button': '知道了',
+            'content_template': '✓ Event details - including name, date, time & location\r\n✓ Short, engaging description\r\n✓ Beautiful calendar\r\n✓ A button so people can RSVP'
+          }
+        },
+        'about-tip': {
+          'edit-mode': {
+            'title': 'What should you include?\r\n',
+            'footer_button': '知道了',
+            'content_template': '✓ Your story\r\n✓ Photos of the workplace or team\r\n✓ A button to contact you'
+          },
+          'add-mode': {
+            'footer_button': '知道了',
+            'content_template': 'This is where you tell people a little about your business. Give them a behind-the-scenes peek into who you are and how you got started. Feel free to keep it short or go into more detail about your mission, values and philosophy.\r\n',
+            'title': 'You’re about to add your About section.\n'
+          }
+        },
+        'first-time-mobile-menu-toggle': '看看您的選單被訪客點擊後的樣子。',
+        'testimonial-tip': {
+          'edit-mode': {
+            'content_template': '✓ Name of each client or customer\r\n✓ Beautiful photo\r\n✓ Short, honest quote',
+            'footer_button': '知道了',
+            'title': 'What does a great Testimonial section include?\r\n'
+          },
+          'add-mode': {
+            'title': 'You’re about to add your Testimonial section.\r\n',
+            'content_template': 'This is where you show people what others are saying about your business. Build credibility with short, honest quotes.',
+            'footer_button': '知道了'
+          }
+        },
+        'opening hours-tip': {
+          'add-mode': {
+            'title': 'You’re about to add an Opening Hours section.\r\n',
+            'footer_button': '知道了',
+            'content_template': 'Make sure you tell your visitors when you’re open for business. This makes it easier for them to plan their visit and know when to call. \r\n'
+          }
+        },
+        'section_height': '您可以在此處變更欄位高度',
+        'first-time-mobile-content-panel': '請勾選或取消勾選圓形圖示顯示或隱藏元素。變更的內容不會引響網站在桌上型電腦上的效果。',
+        'tips-tip': {
+          'edit-mode': {
+            'title': 'What does a great Tips section include?',
+            'footer_button': '知道了',
+            'content_template': '✓ Attention-grabbing title\n✓ Short, catchy description\n✓ A link to read more'
+          },
+          'add-mode': {
+            'footer_button': '知道了',
+            'content_template': 'This is where you add all your Tips. Show visitors that you’re a knowledgeable professional - and keep them coming back with interesting & helpful content.',
+            'title': 'You’re about to add your Tips section.'
+          }
+        },
+        'first-time-preview-go-to-edit': '若要繼續編輯網站，請按一下返回 ADI 編輯器。',
+        'first_time_hide_field': '行動裝置網站上目前沒有顯示此項目。<br/>是否要顯示此項目？請點選該項目。',
+        'notify_by_email_form_builder': 'Add your email to get notified every time a visitors submits a form'
+      },
+      'popups': {
+        'time-to-publish': {
+          'heading': '現在是發佈網站的好時機',
+          'text': '目前您已新增發佈上線<br/>所需的一切元素，只要點選<br/>右上角的發佈即可'
+        },
+        'welcome-to-mobile-editor-existing': {
+          'text': '請嘗試自訂新設計、隱藏元素等。',
+          'text-next': '您變更的內容不會引響網站在桌上型電腦上的效果。',
+          'heading': '新功能！在行動裝置上編輯網站',
+          'heading-next': '您所做的變更會保留在這裡'
+        },
+        'deletesection': {
+          'heading': '要刪除欄位嗎？',
+          'text': '此欄位能將從您的網站移除。'
+        },
+        'add-app': {
+          'heading': '新增 {{TPA}}',
+          'accept-button': '新增到網頁',
+          'description': '這會顯示在網頁的頁尾上方。'
+        },
+        'delete-form': {
+          'text': 'Your form will be removed from your site',
+          'heading': '刪除表單？'
+        },
+        'after-lightbox-add': {
+          'text': '當您的燈箱出現時點擊設定進行選擇。',
+          'accept': '知道了',
+          'heading': '您有燈箱'
+        },
+        'import-page-failed': {
+          'heading': 'We’re Unable to Add This Page',
+          'text': 'ADI can’t add this page to your site.<br/>Try again later or choose another page.'
+        },
+        'tpa-delete-all-widgets-confirmation': {
+          'text': '此應用程式的所有功能<br/>都將從您的網站移除。'
+        },
+        'publish-congrats': {
+          'button': '完成',
+          'heading-first-publish': '恭喜！您的網站已成功發佈',
+          'right': {
+            'text': '使用這樣的網域，如 www.mystunningwebsite.com，讓網站展現更專業的風采：',
+            'subtitle': '連線至個人品牌網域',
+            'button': '連線網域',
+            'sale-upto-text': 'Upgrade now and get a free domain + up to 50% off our most popular premium plans',
+            'heading': '下一步',
+            'sale-text': '立即升級就能取得免費網域，同時享有最熱門進階方案 <span class=\'-sale-accent\'>{{text}} 折優惠</span>',
+            'sale-upto-text-2': 'Upgrade now and get a free domain + up to 50% off our most popular premium plans'
+          },
+          'action': {
+            'twitter': {
+              'socialHashTags': 'MyProWebsite、StartStunning',
+              'socialText': '我用 @Wix 製作完全屬於我的網站！',
+              'title': 'Twitter',
+              'linkText': '在 Twitter 上推文',
+              'description': '用 Twitter 宣傳您的網站，建立死忠粉絲'
+            },
+            'facebook': {
+              'linkText': '在 Facebook 上分享',
+              'description': '分享您的網站來吸引更多訪客',
+              'socialText': '完全屬於我的網站！全都由我親自製作'
+            },
+            'seowiz': {
+              'description': '讓您的網站在 Google 上曝光',
+              'title': 'Google',
+              'linkText': '遵照 SEO 方案'
+            },
+            'dashboard': {
+              'linkText': '前往 Wix 首頁',
+              'description': '拓展業務，並吸引訪客瀏覽您的網站'
+            },
+            'shoutout': {
+              'linkText': '傳送電子郵件',
+              'description': '用電子郵件宣傳來推廣您的網站',
+              'title': 'Email campaign'
+            },
+            'email': {
+              'description': '根據您的網域建立一個電子郵件地址',
+              'linkText': '取得您的信箱'
+            }
+          },
+          'left': {
+            'button': '檢視網站',
+            'heading': '您的網站已發佈上線：',
+            'heading-first-publish': '我們已將您的網站發佈至此位址：'
+          },
+          'connect-your-own-domain': {
+            'button': '連線您的網域'
+          },
+          'heading': '恭喜！',
+          'three-actions-promote': {
+            'subtitle': '推廣您的網站和事業'
+          },
+          'three-actions-social': {
+            'subtitle': '增加網站流量'
+          }
+        },
+        'fitmode': {
+          'text': '如要顯示完整圖片，使用這些版面配置。',
+          'heading': '欄位設計'
+        },
+        'import-page-success': {
+          'text': 'ADI added this page to your new site.<br/>Go ahead and customize it.',
+          'heading': '您有新頁面'
+        },
+        'cant-delete-footer': {
+          'heading': '這是頁尾<br/>不能隱藏',
+          'text': '您的頁尾會出現在所有網頁，<br/>所以至少要選一個來顯示。'
+        },
+        'after-page-add': {
+          'heading': '恭喜！',
+          'accept': '繼續',
+          'text': '您有新頁面'
+        },
+        'after-tpa-groups-add': {
+          'heading': '您有群組',
+          'text': 'Click Manage to create your first group and invite members.',
+          'button': 'Got It'
+        },
+        'form-builder-upgrade': {
+          'text': '新增無限制的欄位、啟用檔案上傳、<br/> 取得高級聊天功能等。',
+          'heading': '用 Wix 的 Ascend <br/> 來升級您的表單'
+        },
+        'change-to-editor': {
+          'bullets': {
+            '1': '可輕鬆拖放',
+            '2': '擁有逾 1000 種進階設計功能',
+            '3': '適用 Restaurants、Hotels 和 Events 等服務的應用程式',
+            '3-new': '適用 Restaurants、Hotels 和 Events 等服務的應用程式',
+            '2-new': '擁有逾 1000 種進階設計功能'
+          },
+          'go-to-editor': '前往編輯器',
+          'subtitle': '',
+          'warning-new': '如果您要回到 Wix ADI，則在 Wix 編輯器中儲存的任何變更將無法繼續使用',
+          'title': '在 Wix 編輯器中編輯網站',
+          'warning': '如果您在 Wix 編輯器中儲存網站，便無法繼續在 Wix ADI 中編輯此網站。',
+          'cancel': '繼續在這裡編輯'
+        },
+        'mobile-editor': {
+          'Chat_Widget': 'To customize Chat,<br>switch to desktop mode.'
+        },
+        'lightbox-delete-confirmation': {
+          'heading': '刪除您的燈箱？',
+          'text': '此燈箱將從您的網站移除。'
+        },
+        'after-tpa-blog2-add-section': {
+          'text': '現在，您可以建立和安排貼文發佈時間、新增留言、增加追蹤人數等。'
+        },
+        'after-tpa-stores-add': {
+          'text': '您可以選擇精美的圖庫、新增產品、連接付款方式等。',
+          'heading': '您有商店'
+        },
+        'after-tpa-deviantart-add-section': {
+          'text': 'Connect an account to display your art.'
+        },
+        'welcome-to-mobile-editor-new': {
+          'text': '您可以變更版面配置、隱藏元素，並進行其他操作。您變更的內容不會引響網站在桌上型電腦的效果。',
+          'heading': '在行動裝置上查看您的網站'
+        },
+        'after-tpa-blog-add': {
+          'text': '現在，您可以建立和安排貼文日期、新增留言、增加追蹤人數等。',
+          'heading': '您有部落格'
+        },
+        'after-tpa-progallery-add': {
+          'heading': '您有圖庫',
+          'text': '您可以上傳相片及影片，然後在網站的精美圖庫中展示這些內容。',
+          'button': '知道了'
+        },
+        'publish-choose-domain': {
+          'option2': {
+            'text': '連線您的自訂網域'
+          },
+          'option1': {
+            'text': '使用免費的 Wix.com 網域'
+          },
+          'heading': '選擇一個網域，進而在其中發佈網站',
+          'button': '發佈並繼續',
+          'subtitle': '選擇的網域將會成為網址'
+        },
+        'after-tpa-chat_widget-add': {
+          'text': '立即發佈網站，開始透過桌上型電腦和行動裝置與網站訪客交談。',
+          'button': '知道了',
+          'heading': '您有聊天'
+        },
+        'after-tpa-restaurantsorders-add': {
+          'heading': '您已經新增了訂餐',
+          'text': '點擊管理以設定網路訂餐。'
+        },
+        'movesection': {
+          'text': '選擇網頁',
+          'heading': '移動此欄位'
+        },
+        'after-tpa-bandsintown-add': {
+          'text': '連線帳戶以顯示巡迴日期、販售門票等。',
+          'heading': '您有 Bandsintown'
+        },
+        'page-delete-confirmation': {
+          'heading': '删除页面',
+          'text': '此頁面的所有欄位和功能都將從您的網站移除。'
+        },
+        'welcome-to-mobile-editor-campaign': {
+          'title-text': 'Get More Design Options<br/>for Mobile',
+          'text': 'To get the latest design features for your site on mobile, switch to the Wix mobile Editor',
+          'buttons': {
+            'ok': '前往編輯器'
+          }
+        },
+        'publish-connect-domain': {
+          'option2': {
+            'text': '連線既有的網域'
+          },
+          'option1': {
+            'text': '取得新的網域名稱'
+          },
+          'subtitle': '請升級網站，以便連線至自訂網域',
+          'button': '可以在稍後進行',
+          'heading': '連線您的網域'
+        },
+        'cant-delete-header': {
+          'heading': '這是頁首<br/>不能隱藏',
+          'text': '您的頁首會出現在所有網頁，<br/>所以至少要選一個來顯示。'
+        },
+        'after-tpa-challenges-add': {
+          'heading': '您有程式',
+          'button': '知道了',
+          'text': '點擊管理以新增您的第一個程式。'
+        },
+        'after-tpa-getsubscribers-add': {
+          'heading': '您有訂閱表單',
+          'text': '訪客現在可以註冊成為網站會員。每當有新訂閱者時，我們將傳送電子郵件給您。<br/><br/>'
+        },
+        'after-tpa-giftcard-add': {
+          'heading': '您有禮品卡',
+          'text': '請按一下管理，自訂禮品卡。'
+        },
+        'tpa-delete-confirmation': {
+          'heading': '是否要刪除 {{TPA}}？',
+          'text': '此應用程式的所有功能 <br/> 都將從您的網站移除。'
+        },
+        'delete-sticky-social-bar': {
+          'heading': '刪除您的社交工具列？',
+          'text': '此功能將從您的網站移除。'
+        },
+        'unfitmode': {
+          'text': '選擇能顯示裁切圖片的設計。',
+          'heading': '選擇新設計'
+        },
+        'publish-failed': {
+          'heading': '我們再試一次',
+          'text': '按一下「發佈」，網站即可上線。',
+          'accept': '發佈網站'
+        },
+        'after-tpa-forum-add': {
+          'text': '按一下預覽，即可新增類別並撰寫貼文。',
+          'heading': '您有一個論壇'
+        },
+        'after-tpa-getsubscribers-add-section': {
+          'text': '訪客現在可以註冊成為網站會員。每當有新訂閱者時，我們將傳送電子郵件給您。<br/><br/>'
+        },
+        'after-tpa-music-add-section': {
+          'text': '您可以直接在網站上<br/>輕鬆新增、直播和販售音樂。'
+        },
+        'after-tpa-stickysocialbar-add': {
+          'heading': '您有社交工具列',
+          'button': '知道了',
+          'text': '連結至您的社交帳號讓訪客能夠追蹤您。'
+        },
+        'after-tpa-photoalbums-add': {
+          'text': '請按一下「管理」建立首個相簿。',
+          'button': '知道了',
+          'heading': '您已取得相簿應用程式'
+        },
+        'form-preset-change-confirmation': {
+          'text': '如您已為此表單建立自動化功能，請重新啟用之。',
+          'button': '確定',
+          'heading': '要變更表單設計嗎？'
+        },
+        'welcome-to-apps-panel': {
+          'bookings': {
+            'installed': {
+              'text': 'Manage your session, bookings calendar, team and more.'
+            },
+            'text': 'Add Bookings app to start taking bookings online.'
+          },
+          'paid-plans': {
+            'text': '新增定價方案應用程式以便建立會員方案與套裝。'
+          }
+        },
+        'after-tpa-music-add': {
+          'heading': '您有音樂播放器',
+          'text': '您可以直接在網站上<br/>輕鬆新增、直播和販售音樂。'
+        },
+        'after-tpa-video-add-section': {
+          'text': '按一下管理，新增首批影片。'
+        },
+        'delete-chat': {
+          'heading': '是否要刪除聊天功能？',
+          'text': '如此一來，您將無法在線上<br/>與網站訪客交談。'
+        },
+        'after-tpa-instagram-add-section': {
+          'text': '連線Instagram帳號以便在網站上的動態消息顯示相片和影片。'
+        },
+        'after-tpa-bandsintown-add-section': {
+          'text': '請連線帳戶以顯示巡迴日期、販售門票等。'
+        },
+        'save-your-site': {
+          'heading': 'Save your website!',
+          'text': '註冊 Wix.com <br/>以儲存變更並繼續編輯。'
+        },
+        'after-tpa-deviantart-add': {
+          'button': 'Got It',
+          'heading': 'You’ve Added a DeviantArt Feed'
+        },
+        'page-add-initiation': {
+          'text': '您可以在右上角點選預覽，即可查看選單效果。',
+          'heading': '這是網站的選單',
+          'accept': '知道了'
+        },
+        'form-hiding-confirmation': {
+          'heading': '要隱藏表單嗎？',
+          'text': '如您已為此表單建立自動化功能，請重新啟用之。',
+          'button': '確定'
+        },
+        'after-tpa-bookings-add': {
+          'heading': '您有預約',
+          'text': '點擊管理以新增您的服務。'
+        },
+        'after-tpa-restaurantsreservations-add': {
+          'heading': '您已經新增了訂位'
+        },
+        'after-tpa-restaurantsmenus-add': {
+          'text': '點擊管理以開始新增您的菜色。',
+          'heading': '您已經新增了菜單'
+        },
+        'after-tpa-blog-add-section': {
+          'text': '我們已經新增專屬您部落格的新網頁。輕鬆撰寫、編輯並安排文章，展示照片與影片，<br/> 新增留言區段等等。'
+        },
+        'after-tpa-getsubscribers-learn-more': '進一步了解',
+        'deleteitem': {
+          'heading': '刪除項目',
+          'text': '您確定要刪除此項目嗎？'
+        },
+        'after-tpa-paidplans-add': {
+          'heading': '您有定價方案',
+          'text': '建立定價計畫，讓大家可以購買您的內容、產品和服務。'
+        },
+        'after-tpa-bookings-add-section': {
+          'text': '點擊管理以新增您的服務。'
+        },
+        'autosave': {
+          'text': 'Wix ADI 會自動儲存網站設計，因此您無需自行儲存。',
+          'heading': '系統已自動儲存網站！'
+        },
+        'delete-list-item': {
+          'heading': '刪除項目',
+          'text': '您確定要刪除此項目嗎？'
+        },
+        'after-tpa-events-add': {
+          'heading': '您有活動'
+        },
+        'after-tpa-loyalty-add': {
+          'text': '按一下「管理」以編輯計劃詳情。',
+          'heading': '酬賓計劃現已設立'
+        },
+        'after-tpa-events-add-section': {
+          'text': '按一下管理，建立首個活動。'
+        },
+        'new-publish-connect-domain': {
+          'option1': {
+            'text': 'Get a new domain name like <strong>{{domain}}</strong>'
+          }
+        },
+        'after-tpa-video-add': {
+          'heading': '您擁有影片播放器'
+        },
+        'after-tpa-blog2-add': {
+          'heading': '您有部落格',
+          'text': '現在，您可以建立和安排貼文發佈時間、新增留言、增加追蹤人數等。'
+        },
+        'after-tpa-stores-add-section': {
+          'text': '您可以選擇精美的圖庫、新增產品、連接付款方式等。'
+        },
+        'after-tpa-restaurantsreservations-add-section': {
+          'text': '點擊管理以設定您的網路訂位。\n'
+        },
+        'after-tpa-add': {
+          'text': '您有 {{TPA}}'
+        },
+        'after-tpa-instagram-add': {
+          'heading': '您有 Instagram 動態消息'
+        },
+        'edit-now': '立即編輯',
+        'after-tpa-progallery-add-section': {
+          'text': '您可以上傳相片及影片，然後在網站的精美圖庫中展示這些內容。'
+        }
+      },
+      'pages_panel': {
+        'add-page': {
+          'mobile': {
+            'text': '是否在網站中新增更多頁面？請前往',
+            'target': '桌面'
+          },
+          'desktop': '+ 新增頁面',
+          'disabled': {
+            'learn-more': '瞭解更多'
+          }
+        },
+        'rename-page': {
+          'input': {
+            'placeholder': '命名此網頁'
+          }
+        },
+        'page-name': {
+          'error': '頁面名稱必須<br />介於 1 至 100 個字元間'
+        },
+        'rename-lightbox': {
+          'input': {
+            'placeholder': '命名此燈箱'
+          }
+        },
+        'title': '管理頁面',
+        'header': {
+          'menu-panel-link': '在此管理您網站上的所有頁面。若要管理您的選單項目，請前往 <a href="#" ng-click="$ctrl.onMenuPanelLinkClick()">網站選單</a>。',
+          'menu-panel-button': 'Edit Site',
+          'menu-panel-text': '您可以在此新增、編輯並重新命名您的網頁。若要整理您的網站選單，請前往編輯選單。'
+        },
+        'import-page': '滙入',
+        'group': {
+          'lightbox': {
+            'title': '燈箱',
+            'tooltip': 'Use a popup to display important info, get more subscribers and let people contact you. Show it once, on any of your pages.'
+          }
+        }
+      },
+      'assistant-menu-task': {
+        'page-seo': {
+          'label': '改善此頁面的 SEO',
+          'deprecated-label': '改善 SEO 入門'
+        },
+        'paid-plans': {
+          'tour-title': '定價方案'
+        },
+        'animation': {
+          'label': '變更動畫',
+          'deprecated-label': '新增動畫'
+        },
+        'lightbox': {
+          'label': '新增燈箱'
+        },
+        'change-layout': {
+          'label': '變更欄位版面配置',
+          'deprecated-label': '變更欄位版面配置'
+        },
+        'add-section': {
+          'label': '新增欄位',
+          'deprecated-label': '新增欄位'
+        },
+        'font-panel': {
+          'label': '變更字型',
+          'deprecated-label': '切換字型'
+        },
+        'edit-content': {
+          'label': '編輯欄位內容',
+          'deprecated-label': '編輯欄位'
+        },
+        'preview': {
+          'deprecated-label': '預覽',
+          'label': '預覽網站'
+        },
+        'change-business-details': {
+          'label': 'Change Business Type'
+        },
+        'add-page': {
+          'deprecated-label': '增加新頁面',
+          'label': '增加新頁面'
+        },
+        'entire-website-design': {
+          'deprecated-label': '變更主題',
+          'label': '變更主題'
+        },
+        'connect-domain': {
+          'deprecated-label': '連線網域',
+          'label': '連線網域'
+        },
+        'color-design': {
+          'deprecated-label': '編輯網站顏色',
+          'label': '變更顏色'
+        },
+        'tpa': {
+          'label': '管理{{tpa}}'
+        },
+        'publish': {
+          'deprecated-label': '發佈網站',
+          'label': '發佈網站'
+        },
+        'customize-section-design': {
+          'label': '自訂設計',
+          'deprecated-label': '自訂欄位設計'
+        },
+        'wiz-seo': {
+          'label': '取得適用於網站的 SEO 方案'
+        }
+      },
+      'design': {
+        'coloration': {
+          'color-mode-selector-new': {
+            'dialog': {
+              'mode-title': '模式',
+              'title': '顏色設定',
+              'coloration-level': {
+                'drop-down': {
+                  'vibrant': '充滿活力',
+                  'tinted': '濃淡',
+                  'colorful': '彩色',
+                  'plain': '一般'
+                }
+              },
+              'coloration-mode': {
+                'radio-buttons': {
+                  'mix': '混合',
+                  'dark': '黑暗',
+                  'light': '明亮'
+                }
+              },
+              'coloration-level-title': '填滿顏色層次'
+            },
+            'button-edit': '編輯',
+            'mode-title': '顏色模式'
+          },
+          'basic': {
+            'loader': {
+              'text': '正在製作您的調色盤......'
+            },
+            'palettes': {
+              'title': '推薦的調色盤'
+            },
+            'hex-value': '十六進位值',
+            'panelheader': '網站顏色',
+            'panelheadernew': '網站顏色',
+            'change-palette-colors': '編輯調色盤顏色',
+            'logoPalette': {
+              'title': '標誌調色盤'
+            },
+            'advanced': '進階編輯選項',
+            'palettetitle': '主要顏色'
+          },
+          'generic': {
+            'secondary': '次要',
+            'main': '主頁',
+            'dark': '黑',
+            'third': '第三種',
+            'fourth': '第四',
+            'light': '明亮'
+          },
+          'advanced': {
+            'readability': {
+              'learn': {
+                'more': '瞭解更多'
+              },
+              'positive': '您的文字淺顯易懂',
+              'loader': '調整顏色中 ...',
+              'negative': 'Palette colors are hard to read',
+              'fix': '調整顏色'
+            },
+            'secondary': {
+              'color': '次要顏色'
+            },
+            'panelheader': '調色盤顏色',
+            'title': '編輯調色盤',
+            'third': {
+              'color': '第三種顏色'
+            },
+            'reset': '重設',
+            'description': '選擇要使用於整個網站的顏色。然後確保文字淺顯易懂。',
+            'main': {
+              'color': '主要顏色'
+            },
+            'dark': {
+              'color': '暗色系'
+            },
+            'fourth': {
+              'color': '第四種顏色'
+            },
+            'light': {
+              'color': '明亮色系'
+            }
+          },
+          'palette': {
+            'edit': '編輯',
+            'title': '調色盤'
+          },
+          'coloration-mode-selector': {
+            'dropdown': {
+              'light-mode': '明亮模式',
+              'dark-mode': '黑暗模式'
+            },
+            'title': '調色盤模式'
+          },
+          'palettecolordialog': {
+            'paragrpah': '為確保訪客能輕鬆瀏覽網站，請選擇 {{colorType}} 色系。'
+          },
+          'customize-palette': {
+            'title': '{{ colorTypeName }} 色系'
+          }
+        },
+        'fonts': {
+          'text-alignment': {
+            'label': '對齊文字',
+            'right': '靠右對齊',
+            'center': '置中',
+            'left': '靠左對齊'
+          },
+          'spacing': {
+            'title': 'Spacing between elements',
+            'small': '小',
+            'large': '大',
+            'medium': '中'
+          },
+          'font-size-': {
+            '0': '中',
+            '1': '大',
+            '2': '極大',
+            '3': '非常大',
+            '-2': '極小',
+            '-1': '小份',
+            '-3': '小'
+          },
+          'panel-title': '網站字型',
+          'section-panel-title-alignment': '文字設定',
+          'title': '字型',
+          'paragraph-columns': {
+            'merge': '合併',
+            'split': '分裂'
+          },
+          'section-tip-alignment': 'Choose section font size and text alignment.<br />Go to <a ng-click=\'$ctrl.goToFontsPanel()\' data-hook="goto-fonts-panel">Site Fonts</a> to change your site\'s font set.',
+          'section-panel-title': '字型大小',
+          'section-tip': '選擇字型大小，並套用至所選的欄位。<br />到<a ng-click=\'$ctrl.goToFontsPanel()\' data-hook="goto-fonts-panel">網站字型</a>變更網站的字型集。',
+          'position-on-media': '位置',
+          'size-notice': '字型集大小',
+          'font-size': {
+            'label': '大小：{{ sizeLabel }}'
+          },
+          'site-tip': '為您的標題和文字選擇字型集。使用滑標調整大小。'
+        },
+        'font-data': {
+          'chic': {
+            'description': '瀟灑自若的風格，在靜謐中綻放出獨特魅力',
+            'name': '別緻'
+          },
+          'loft': {
+            'name': '閣樓',
+            'description': '低調酷炫，簡單不設限'
+          },
+          'breeze-2': {
+            'name': '微風 2',
+            'description': '迎面拂來微涼清風，融著清新宜人的氣息'
+          },
+          'bold-2': {
+            'name': '粗體 2',
+            'description': '富有冒險精神，完美展現大方且自信的一面'
+          },
+          'glee': {
+            'description': '天馬行空，快樂滿載，有如兒童玩具一般',
+            'name': '愉快'
+          },
+          'sophisticated': {
+            'description': '猶如環遊世界的旅行家，經過許多奇妙的歷險，渾身散發著爾雅的文化氣息',
+            'name': 'Sophisticated'
+          },
+          'emerge': {
+            'name': '展露',
+            'description': '大膽、洗鍊，永遠領先賽局'
+          },
+          'fun': {
+            'description': '大膽鮮明，彷若被捲進震耳欲聾的音樂旋渦中',
+            'name': 'Fun'
+          },
+          'lime': {
+            'name': '萊姆',
+            'description': '天然有機，鮮榨風味'
+          },
+          'unplugged': {
+            'name': 'Unplugged',
+            'description': '前衛大膽，毫不矯揉造作的原始光輝油然而生'
+          },
+          'organic': {
+            'name': '有機',
+            'description': '散發歡樂溫馨的氛圍，完美襯托真誠且友善的形象'
+          },
+          'agile': {
+            'name': '敏捷',
+            'description': '生意盎然、充滿活力，自然地落下峻利的筆鋒'
+          },
+          'showtime': {
+            'description': '嘻哈摩登的冒險之旅',
+            'name': '好戲上場'
+          },
+          'horizon-2': {
+            'description': '簡潔且迷人，如同蔚藍大海上的夕陽',
+            'name': 'Horizon 2'
+          },
+          'rustic': {
+            'name': '鄉村風',
+            'description': '簡約的鄉村風格，綴飾著一抹都會風情'
+          },
+          'cadenza-2': {
+            'description': '熱情與和諧互相交融，如同響亮的交響樂曲一般震撼',
+            'name': '韻律 2'
+          },
+          'chic-2': {
+            'description': '瀟灑自若的風格，在靜謐中綻放出獨特魅力',
+            'name': '別緻 2'
+          },
+          'sky-high': {
+            'name': '高空',
+            'description': '充滿活力的現代都市風格，流露出非凡的影響力'
+          },
+          'fuse': {
+            'name': 'Fuse',
+            'description': '既沉穩又堅強，有著堅定不移的執著'
+          },
+          'luxury': {
+            'name': '奢華',
+            'description': '在寧靜莊重的課堂上，透著高雅與莊嚴的氛圍'
+          },
+          'tender': {
+            'name': '溫柔',
+            'description': '綴著輕柔徐緩的韻味，處處散發著溫馨美好的特質'
+          },
+          'prestige': {
+            'name': '聲望',
+            'description': '披上天鵝絨，尊貴氣質盡現'
+          },
+          'timeless': {
+            'name': 'Timeless',
+            'description': '永不過時的經典風格，呈現永恆之美'
+          },
+          'fresh-2': {
+            'name': 'Fresh 2',
+            'description': '猶如夏日裡的翠綠草坪，既鮮嫩又生氣盎然'
+          },
+          'breeze': {
+            'description': '微微海風迎面拂來，融著清新宜人的氣息',
+            'name': '微風'
+          },
+          'indulge': {
+            'name': 'Indulge',
+            'description': '豪華雅致，同時散發溫柔細膩的氛圍'
+          },
+          'basil': {
+            'name': '羅勒',
+            'description': '自然又有生機，百種香氣四溢'
+          },
+          'vivid': {
+            'name': '生動',
+            'description': '熱情與和諧互相交融，如同響亮的交響樂曲一般震撼'
+          },
+          'hi-rise': {
+            'name': 'Hi Rise',
+            'description': '顯露穩健及專業的形象，卻不會有任何距離感'
+          },
+          'clean': {
+            'description': '整體簡潔且和諧，猶如完美無瑕的圓滑石板',
+            'name': 'Clean'
+          },
+          'pulse': {
+            'description': '身體律動的動能',
+            'name': '衝動'
+          },
+          'clean-2': {
+            'description': '整體簡潔且和諧，猶如完美無瑕的圓滑石板',
+            'name': 'Clean 2'
+          },
+          'ice-cream': {
+            'description': '炎炎夏日的甜蜜提神美味',
+            'name': '冰淇淋'
+          },
+          'grand': {
+            'description': '就像法國鄉村的華美莊園一般，營造精緻優雅的氛圍',
+            'name': '盛大'
+          },
+          'bounce': {
+            'name': '彈跳',
+            'description': '動感十足，風格明亮且活潑歡快'
+          },
+          'bouquet': {
+            'description': '營造美好溫馨的氛圍，能讓人心情愉悅',
+            'name': '花束'
+          },
+          'indie': {
+            'name': '獨立製作',
+            'description': '採用素雅低調的方式，襯托自由奔放、不受束縛的特質'
+          },
+          'intensity': {
+            'name': '熱情奔放',
+            'description': '熱情澎湃、活力四射，完美呈現強大毅力'
+          },
+          'jet-black': {
+            'description': '莊重的色調，不僅俐落且吸睛，綴有一絲俏皮感',
+            'name': '深黑'
+          },
+          'playground-2': {
+            'name': '遊樂場',
+            'description': '朝氣蓬勃、輕鬆愉悅，能感受到最純粹的快樂'
+          },
+          'smart': {
+            'name': 'Smart',
+            'description': '滿腹才學，自信地展現出專業能力，讓人賞心悅目'
+          },
+          'delight': {
+            'name': 'Delight',
+            'description': '呈現一派熱鬧歡騰的氛圍，心緒格外喜悅'
+          },
+          'humble': {
+            'description': '拾級而下的瀑布溪流',
+            'name': '謙遜'
+          },
+          'minimal': {
+            'description': '極富和諧美感，展現質樸與精緻並蓄的迷人魅力',
+            'name': '極簡'
+          },
+          'black-ice-2': {
+            'description': '整體設計深具磁性，筆觸引人入勝、風格強烈',
+            'name': '薄冰 2'
+          },
+          'skyscraper': {
+            'name': 'Skyscraper',
+            'description': '充滿活力的現代都市風格，流露出非凡的影響力'
+          },
+          'maison': {
+            'description': '就像法國鄉村的莊園一般，營造精緻優雅的氛圍',
+            'name': 'Maison'
+          },
+          'dynamic': {
+            'name': 'Dynamic',
+            'description': '精力充沛、勇敢大膽，以喜愛追求刺激的天性為訴求'
+          },
+          'retro': {
+            'name': '復古',
+            'description': '如同經過重生的珍貴骨董一般，讓人不禁墜入古老的時光隧道中'
+          },
+          'midnight': {
+            'description': '既生動又充滿奧秘，絕對能吸引眾人目光',
+            'name': '午夜'
+          },
+          'inspire': {
+            'description': '有權有勢，且洋溢著熱情魅力',
+            'name': '啟發'
+          },
+          'sand': {
+            'name': '砂礫',
+            'description': '平靜清爽的海灘日'
+          },
+          'sincere': {
+            'description': '沉著冷靜，同時保持著真摯坦率的精神',
+            'name': '真誠'
+          },
+          'lush': {
+            'name': '青蔥的',
+            'description': '如同典藏的頂級紅酒，忠實呈現豐富飽滿的高雅色調'
+          },
+          'vogue': {
+            'description': '引人注目的魅力，加上難以言喻的神秘感',
+            'name': '時尚'
+          },
+          'funky': {
+            'name': 'Funky',
+            'description': '獨特且時尚，色彩繽紛明媚，一展創新氣息'
+          },
+          'royal': {
+            'name': '王室的',
+            'description': '蘊含高雅的貴族精神，整體充滿現代感，從裡到外都展現出自信魅力'
+          },
+          'wild-rose': {
+            'name': '野玫瑰',
+            'description': '優雅迷人、細緻精美，巧妙激起一探究竟的慾望'
+          },
+          'delight-2': {
+            'name': 'Delight 2',
+            'description': '呈現一派熱鬧歡騰的氛圍，心緒格外喜悅'
+          },
+          'hype': {
+            'name': '興奮',
+            'description': '整體設計深具磁性，筆觸引人入勝、風格強烈'
+          },
+          'clay': {
+            'description': '溫暖感覺加上地球風，想像力之作',
+            'name': '粘土'
+          },
+          'pure': {
+            'description': '迎來充滿生機的情景，進而感受到質樸善良的可靠特質',
+            'name': '純的'
+          },
+          'agency': {
+            'description': '聰明絕頂，擁有無與倫比的自信心，完美展現專業風貌',
+            'name': '媒介'
+          },
+          'lovely': {
+            'name': '可愛',
+            'description': '綴著迷人輕柔的韻味，處處散發著溫馨美好的特質'
+          },
+          'play': {
+            'description': '大膽鮮明，彷若被捲進震耳欲聾的音樂旋渦中',
+            'name': '播放'
+          },
+          'precious': {
+            'name': '珍貴',
+            'description': '溫柔可愛的一抹喜悅'
+          },
+          'playground': {
+            'name': '操場',
+            'description': '朝氣蓬勃、輕鬆愉悅，能感受到最純粹的快樂'
+          },
+          'classic': {
+            'name': 'Classic',
+            'description': '秉持優雅的特質，完美展現與生俱來的典雅品味'
+          },
+          'sugar': {
+            'description': '擁有甜美活潑的外貌，散發出迷人香氣，使一切事物都變得美好',
+            'name': 'Sugar'
+          },
+          'deep-forest': {
+            'name': 'Deep Forest',
+            'description': '帶著純真樸實的風情，思緒也隨之自由奔放起來，逐漸染上歡愉的心情'
+          },
+          'merlot': {
+            'name': 'Merlot',
+            'description': '如同典藏的頂級紅酒，忠實呈現豐富飽滿的高雅色調'
+          },
+          'charming': {
+            'description': '自信瀟灑、溫文爾雅，舉手投足皆散發著致命魅力',
+            'name': '迷人'
+          },
+          'black-ice': {
+            'name': '薄冰',
+            'description': '整體設計深具磁性，筆觸引人入勝、風格強烈'
+          },
+          'sugar-2': {
+            'description': '擁有甜美活潑的外貌，散發出迷人香氣，使一切事物都變得美好',
+            'name': 'Sugar 2'
+          },
+          'rosewater': {
+            'name': '玫瑰香水',
+            'description': '優雅迷人、細緻精美，巧妙激起心中的浪漫情懷'
+          },
+          'thread': {
+            'name': '線條',
+            'description': '就像您老是重複穿的那件襯衫'
+          },
+          'horizon': {
+            'description': '簡潔且迷人，如同蔚藍大海上的夕陽',
+            'name': 'Horizon'
+          },
+          'upbeat': {
+            'name': 'Upbeat',
+            'description': '充滿開朗樂觀的正能量，讓人為之神魂顛倒'
+          },
+          'innovative': {
+            'description': '極富創意與現代感，燃起先進發展的火花',
+            'name': 'Innovative'
+          },
+          'fresh': {
+            'name': 'Fresh',
+            'description': '猶如夏日裡的翠綠草坪，既鮮嫩又生氣盎然'
+          },
+          'cadenza': {
+            'name': '韻律',
+            'description': '熱情與和諧互相交融，如同響亮的交響樂曲一般震撼'
+          },
+          'soho': {
+            'description': '充滿現代感，如同親臨氣派雍容的市中心建築',
+            'name': 'Soho'
+          },
+          'evolution': {
+            'description': '充滿遠見、追求進步，演繹現代時尚風格',
+            'name': 'Evolution'
+          },
+          'serene': {
+            'description': '縈繞輕盈、寧靜的氛圍，讓人心情平和愉悅',
+            'name': '安詳'
+          },
+          'vintage': {
+            'name': '復古',
+            'description': '散發美好的復古氣息，如同重生的珍貴骨董一般'
+          },
+          'army': {
+            'description': '展現出眾的領導能力，充分彰顯強大且堅忍不拔的精神',
+            'name': '軍隊'
+          },
+          'spark': {
+            'name': '火花',
+            'description': '思維敏捷、懂得振奮人心，發出耀眼的興奮光芒'
+          },
+          'bold': {
+            'description': '富有冒險精神，完美展現大方且自信的一面',
+            'name': '粗體'
+          },
+          'elegant': {
+            'name': 'Elegant',
+            'description': '永不褪色的美麗風情，格調既高檔又優雅'
+          }
+        },
+        'kit': {
+          'type': {
+            'precious': '珍貴',
+            'indie': '獨立',
+            'bouquet': '花束',
+            'indulge': '放縱',
+            'deep-forest': '深林',
+            'evolution': '演化',
+            'playground': '操場',
+            'charming': '迷人',
+            'sky-high': '高空',
+            'play': '播放',
+            'army': '軍隊',
+            'hype': '興奮',
+            'smart': '聰明',
+            'elegant': '優雅',
+            'serene': '安詳',
+            'breeze': '微風',
+            'black-ice': '黑冰',
+            'horizon': '地平線',
+            'grand': '盛大',
+            'fresh-2': '新鮮',
+            'playground-2': '遊樂場',
+            'rosewater-new': '新玫瑰香水',
+            'clay': '粘土',
+            'midnight': '午夜',
+            'clean-2': '乾淨',
+            'cadenza': '華彩樂段',
+            'chic-2': '別緻',
+            'loft': '閣樓',
+            'bold': '粗體',
+            'sugar-2': '甜蜜',
+            'innovative': '創新',
+            'black-ice 2': '黑冰',
+            'sophisticated-new': '幹練（新）',
+            'skyscraper': '摩天大樓',
+            'breeze-2': '微風',
+            'fuse-new': '新融合',
+            'delight': '喜悅',
+            'agency': '代理商',
+            'prestige': '聲望',
+            'spark': '火花',
+            'pulse': '衝動',
+            'bounce': '彈跳',
+            'vivid': '生動',
+            'thread': '線條',
+            'timeless': '永恆',
+            'retro': '復古',
+            'showtime': '好戲上場',
+            'emerge': '展露',
+            'lime': '萊姆',
+            'tender': '溫柔',
+            'merlot': '梅洛',
+            'funky': '時髦',
+            'rustic': '鄉村風',
+            'soho': 'SOHO',
+            'fuse': '保險絲',
+            'sincere': '真誠',
+            'bold-2': '大膽',
+            'unplugged': '原音樂',
+            'pure': '純的',
+            'classic': '經典',
+            'vintage': '復古',
+            'rosewater': '玫瑰香水',
+            'maison': '房屋',
+            'sophisticated': '幹練',
+            'fresh': '新鮮',
+            'lush': '青蔥的',
+            'delight-2': '喜悅',
+            'sand': '砂礫',
+            'organic': '有機',
+            'intensity-new': '熱情奔放（新）',
+            'royal': '王室的',
+            'upbeat': '樂觀',
+            'ice-cream': '冰淇淋',
+            'intensity': '熱情奔放',
+            'glee': '愉快',
+            'vogue': '時尚',
+            'hi-rise': '摩天大樓',
+            'wild-rose': '野玫瑰',
+            'agile': '敏捷',
+            'basil': '羅勒',
+            'humble': '謙遜',
+            'horizon-2': '地平線',
+            'minimal': '極簡',
+            'dynamic': '動態',
+            'fun': '有趣',
+            'lovely': '可愛',
+            'cadenza-2': '華彩樂段',
+            'inspire': '啟發',
+            'jet-black': '深黑',
+            'chic': '別緻',
+            'luxury': '奢華',
+            'sugar': '糖',
+            'clean': '潔白'
+          },
+          'font': {
+            'edit': '編輯',
+            'title': '字型集'
+          },
+          'customize': '自訂',
+          'reset': {
+            'button': '重設'
+          },
+          'title': {
+            'suffix': '套件'
+          },
+          'customize-design': '自訂設計'
+        },
+        'animations': {
+          'preview': '轉換效果為把投影片製作成動畫。<br />選擇一個效果，然後<a ng-click="$ctrl.goToPreview()" data-hook="goto-preview">預覽</a>網站查看該效果如何。',
+          'panel-title': '網站動畫',
+          'slideshow-transition-time': {
+            'label': '投影片持續時間：{{ transitionTime }} 秒'
+          },
+          'title': '動畫',
+          'page-transition': {
+            'title': '轉換頁面'
+          },
+          'component-animation': {
+            'title': '動畫類型'
+          },
+          'slideshow-animation': {
+            'title': '轉換效果'
+          },
+          'section-tip': 'Choose your prefered Animation type. This will affect only the selected section.',
+          'scroll-type': {
+            'title': '捲動效果'
+          },
+          'section-panel-title': '欄位動畫'
+        },
+        'header': {
+          'type': {
+            'easter-egg-url': 'https://www.youtube.com/embed/Qkuu0Lwb5EM?rel=0&autoplay=1&showinfo=0',
+            'title': '頁首類型',
+            'solid': '一般顯示',
+            'fixed': '固定',
+            'transparent': '透明'
+          },
+          'logo-size-': {
+            '0': '中',
+            '1': '大',
+            '2': '極大',
+            '-1': '小',
+            '-2': '極小'
+          },
+          'bgcolor': {
+            'title': '頁首背景色彩',
+            'transparent': '頁首在首頁中會是透明的。<br/>請為內頁選擇一種顏色。',
+            'description': '為 {{ sitePart }} 挑選色彩。<br/>如需更改網站各處之色彩，請前往<a ng-click="$ctrl.goToColorationPanel()" class="go-to-site-color" data-hook="goto-site-colors">色彩</a>頁面。'
+          },
+          'logo-size': {
+            'label': '大小：{{ sizeLabel }}'
+          }
+        },
+        'colors': {
+          'title': '顏色'
+        },
+        'themes': {
+          'title': '主題'
+        },
+        'lightbox': {
+          'overlay-panel-description': 'Select a color for the overlay and adjust its opacity.<br/>To change colors across your site go to <a ng-click="$ctrl.goToColorationPanel()" class="go-to-site-color" data-hook="goto-site-colors">Colors</a>.',
+          'color-panel-description': '為此燈箱選擇您喜歡的顏色組合。請前往 <a ng-click="$ctrl.goToColorationPanel()" data-hook="goto-site-colors">顏色</a> 變更您網站的調色盤。',
+          'color-panel-title': '燈箱顏色',
+          'alignment-panel-description': '調整您在這個燈箱中的字型大小與文字對齊方式。<br />請前往 <a ng-click=\'$ctrl.goToFontsPanel()\' data-hook="goto-fonts-panel">字型</a> 變更您網站的字型樣式。',
+          'overlay-panel-title': 'Lightbox Overlay'
+        },
+        'page-design': {
+          'title': '頁面設計'
+        },
+        'footer': {
+          'bgcolor': {
+            'title': '頁尾背景顏色'
+          }
+        }
+      },
+      'new-intro': {
+        'platforms-urls': {
+          'facebook-placeholder': '貼上您的 Facebook 專頁網址',
+          'title-new': '您要匯入您的影像和文字嗎？',
+          'website-label-title': '現有的網站',
+          'invalid-google-places': '我們找不到這個店家。請重新搜尋。',
+          'google-placeholder-example': '在 Google 上搜尋您的商務',
+          'legal-message': 'Wix ADI will search online to gather info for your website. You\'ll be able to review and edit everything before you go live.',
+          'youtube-label-title': 'YouTube 頻道',
+          'website-label': '您目前的網站',
+          'google-placeholder-new': '在 Google 上搜尋您的商務',
+          'invalid-url': '請輸入有效的網址',
+          'invalid-url-new': '我們找不到這個網址。',
+          'google-placeholder': '在 Google 上搜尋您的店家',
+          'links-title-new': '要匯入內容，請複製並貼上您的連結：',
+          'links-title': '在下面複製並貼上您的連結：',
+          'website-label-new': '現有的網站',
+          'youtube-placeholder-new': '例如，youtube.com/user/mychannel',
+          'facebook-label': 'Facebook 頁面',
+          'youtube-placeholder-example': '示例：youtube.com/channelname',
+          'youtube-label': 'YouTube 頻道',
+          'facebook-placeholder-new': '例如，facebook.com/mypage',
+          'website-placeholder': '輸入您目前網站的網址',
+          'invalid-google-places-new': '我們找不到這個商務。',
+          'google-label': 'Google 地點',
+          'facebook-placeholder-example': '示例：facebook.com/pagename',
+          'facebook-label-new': '臉書粉絲專頁',
+          'website-placeholder-example': '示例：www.yourwebsite.com',
+          'google-label-title': 'Google 地點',
+          'website-placeholder-new': '例如，www.mywebsite.com',
+          'title': '是否要匯入內容？',
+          'invalid-website-new': '我們找不到這個網站網址。',
+          'subtitle-new': '已經有網路形象了嗎？<br/>匯入您的內容好在新網站上使用。',
+          'legal-message-next': '點擊「下一步」，代表您允許我們搜尋並匯入此內容，同時確認您擁有或經授權使用並承擔使用責任。',
+          'youtube-placeholder': '貼上您的 YouTube 頻道網址',
+          'sublabel-new': '已經有網路形象了嗎？<br/>匯入您的內容好在新網站上使用。',
+          'sublabel': '您可以在新網站上使用匯入內容。',
+          'review-images': '檢視可用圖片',
+          'facebook-label-title': '臉書粉絲專頁',
+          'choose-your-content': 'Choose your content to import:',
+          'invalid-website': '我們找不到這個網站網址。請再次檢查，然後再試一次。'
+        }
+      },
+      'editor': {
+        'media-settings': {
+          'ext-video-settings': {
+            'title': '影片設定'
+          },
+          'ms-options': {
+            'gallery': {
+              'all': {
+                'button': '變更圖庫'
+              }
+            },
+            'image': {
+              'cropped': {
+                'button': '裁切'
+              },
+              'croppedheader': {
+                'button': '裁切'
+              },
+              'strip': {
+                'button': '位置'
+              },
+              'backgroundlist': {
+                'button': '位置'
+              },
+              'backgroundfull': {
+                'button': '位置'
+              },
+              'uncropped': {
+                'button': '設計'
+              },
+              'background': {
+                'button': '位置'
+              },
+              'stripheader': {
+                'button': '位置'
+              },
+              'column': {
+                'button': '位置'
+              },
+              'backgroundheader': {
+                'button': '位置'
+              }
+            },
+            'cropped': '裁切',
+            'strip': '帶狀圖片',
+            'box': '塊狀檢視',
+            'background': '背景',
+            'stripheader': '頁首帶狀圖片',
+            'uncropped': '全幅圖片',
+            'croppedheader': '方格頁首',
+            'backgroundfull': '全螢幕背景',
+            'column': '欄',
+            'backgroundheader': '頁首背景',
+            'backgroundlist': '清單背景'
+          },
+          'gallery-name': {
+            'fullwidthcollage_c': '3 欄式全螢幕拼貼',
+            'slider': '滑桿',
+            'stripshowcase': '全螢幕展示欄',
+            'fullwidthcollage_b': '4 欄式全螢幕拼貼',
+            'stripaccordion': '全螢幕垂直投影片',
+            'grid4': '4 個欄位方格',
+            'slideshow': '投影片放映',
+            'stripslideshow': '全螢幕投影片放映',
+            'grid3': '3 個欄位方格',
+            'collage': '拼貼',
+            'accordion': '垂直投影片',
+            'grid6': '6 個欄位方格',
+            'grid2': '2 個欄位方格',
+            'animatedgrid3': '動畫網格',
+            'stripmasonry': '全螢幕磚型圖庫',
+            'thumbnails': '縮圖投影片',
+            'masonry': '瀑布流',
+            'fullwidthcollage': '全螢幕拼貼'
+          },
+          'link-label': '連結',
+          'gallery': {
+            'change-color': '顏色',
+            'organize-media': '組織媒體'
+          },
+          'image-upscale-message': {
+            'revert-btn': '復原',
+            'fix-title': '注意！此圖片為低解析度。',
+            'revert-title': '已改善圖片品質',
+            'fix-btn': '改善解析度'
+          },
+          'button-replace': '更換',
+          'tabs': {
+            'pattern': '圖樣',
+            'video': '影片',
+            'shape': '形狀',
+            'gallery': '圖庫',
+            'image': '圖片'
+          },
+          'loop': {
+            'title': 'Play in loop'
+          },
+          'autoplay': {
+            'title': '載入時自動播放'
+          },
+          'button-search': '搜尋',
+          'video-settings': {
+            'title': '影片設定'
+          },
+          'ext-video': {
+            'controls': {
+              'option': {
+                'always': '一律',
+                'on-hover': '在浮動檢視時',
+                'never': '永不'
+              },
+              'label': '顯示影片控制項'
+            },
+            'loop': {
+              'label': 'Play in loop'
+            },
+            'video-url': {
+              'placeholder': '貼上 YouTube 或 Vimeo 網址',
+              'label': '影片網址'
+            },
+            'autoplay': {
+              'label': '自動播放影片'
+            }
+          },
+          'logo': {
+            'shape': '標誌形狀',
+            'image': '商標圖片'
+          },
+          'shape-settings': {
+            'title': '形狀設定'
+          },
+          'media-type': '媒體類型',
+          'description': {
+            'title': '說明'
+          },
+          'media-background': {
+            'label': '圖片背景色彩'
+          },
+          'video-menu': {
+            'free-wix-library': 'Wix 免費提供',
+            'youtube-vimeo': 'YouTube / Vimeo',
+            'upload': '上傳影片'
+          },
+          'types': {
+            'shape': '形狀',
+            'gallery': '圖庫',
+            'image': '圖片',
+            'pattern': '圖樣',
+            'video': '影片'
+          },
+          'image-settings': {
+            'title': '圖片設定'
+          },
+          'media-size': {
+            'label': '媒體版面配置'
+          },
+          'for-more-layouts': '如需更多版面配置選項，請前往<a ng-click="$ctrl.goToSwitchPreset()" adi-automation="more-layouts-switch-preset" data-hook="goto-switch-preset">欄位設計</a>',
+          'media-title': {
+            'title': '標題（替代文字）'
+          },
+          'title-label': '標題（替代文字）',
+          'media-opacity': {
+            'label': '圖片不透明度'
+          },
+          'show-video-controls': {
+            'title': '顯示影片控制項'
+          },
+          'title-placeholder': '在這裡新增標題',
+          'video-url': {
+            'title': '影片網址'
+          },
+          'clipart-settings': {
+            'title': '美工圖案設定'
+          },
+          'description-placeholder': '描述圖片',
+          'description-label': '說明',
+          'title': '媒體設定',
+          'image-position': {
+            'title': '圖片位置'
+          }
+        },
+        'catalog-styles': {
+          'sticky-social-bar': {
+            'title': '選擇一個設計'
+          },
+          'buttons': {
+            'description': '請挑選您喜愛的風格',
+            'title': '按鈕設計'
+          }
+        }
+      },
+      'spinner': {
+        'message': {
+          '0': 'Loading everything you need',
+          '1': '這一切都從吸睛的網站與網頁開始',
+          '2': 'Loading everything you need to be stunning',
+          '3': '請稍等...',
+          '4': '載入中...',
+          '5': '即將完成......',
+          '6': '新增功能中 ...',
+          '7': '載入中…',
+          'publish': {
+            '0': '正在準備上線......',
+            '1': '正在整理您的網頁......',
+            '2': '正在更新您的變更......',
+            '3': '正在整合......',
+            'title': '正在發佈您的網站......'
+          }
+        },
+        'step': {
+          'out-of': '／',
+          'step': '步驟：'
+        }
+      },
+      'help': {
+        'section': {
+          'colors': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e5132ef4-36d7-48d4-ac0a-fe5a142e3fc1',
+          'editListItem': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/b07cea50-6826-4b12-9d6b-e23cf109e4f3',
+          'edit(Contact)': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9efe4a0c-478f-46b7-a395-e73a9f39aa26',
+          'add': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/12ac8476-5313-4e7d-a482-74f3a5a100e7',
+          'sectionMedia': {
+            'editListPageSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/4c5f6517-fd48-4a3d-be10-e532b2b18b44',
+            'editSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/d4d6f53a-f587-4bbd-962e-10e239bafba3',
+            'mediaSettingsPanel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/1df3e92f-b84f-4a29-80b9-d62c57509459',
+            'patternsPanel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9e4ab889-b475-4ea2-906b-1004fce4a14f'
+          },
+          'edit(GeneralDescription)': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a355cea5-c7d8-4cc2-94db-5a01a9036b40',
+          'edit(Testimonial)': '',
+          'font': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/7ea7311e-55dc-4a70-9605-44752d3311b5',
+          'editSlideShow': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/4c375801-504b-49e4-b7fb-9641c58a34fb',
+          'editMobileSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/0e672c8a-d881-4d70-b56f-cd109b06a9f4',
+          'animations': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/1c7b6cc2-300c-4b5d-8d27-7eb8e8c3d6df',
+          'editListPageSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/307fbba8-2bb4-4c2c-af8e-36ca448f783b',
+          'edit(TeamMember)': '',
+          'edit(Footer)': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/43b8f6ca-bab0-4757-b695-fcbe815d5dc8',
+          'replace': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/2597032c-8945-4d17-877f-088f205def92',
+          'editSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/5c2f21df-f168-429a-9854-775a45e1f249',
+          'edit-html': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e2d98786-3a2c-45be-a32b-bd1b287aba58'
+        },
+        'pages': {
+          'permissions': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/{{article}}',
+          'mobile': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/90610bac-40c1-4dc2-b8bd-abb94cf71b9a',
+          'seo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a9e484ea-4e67-4d05-8b37-8040087d7d4c',
+          'menu': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9b662af0-cf45-45f0-81bd-a8e557e9f06a',
+          'add': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/287e1255-34c8-418a-9a0b-f17b11d28199',
+          'page-settings': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a9e484ea-4e67-4d05-8b37-8040087d7d4c'
+        },
+        'mediasettings': {
+          'image': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/f6e993e6-b64b-43fa-b103-fd39db251114',
+          'extVideo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a7147aff-a2da-4f12-87aa-b18b140a9614',
+          'bgVideo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a7147aff-a2da-4f12-87aa-b18b140a9614',
+          'clipart': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e2536465-be1b-4df5-8f13-9fadea234eee',
+          'shape': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/7776a3db-c4eb-49c7-9b28-bb452d487f24'
+        },
+        'mediagallery': {
+          'singleclipart': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/073a29ed-ad50-40db-aa10-72e0187ae0f9',
+          'singleimage': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/ed7428da-e7b2-4399-90df-76fc906c79ef',
+          'singleshape': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/0a1088b1-9488-4af5-8221-ae73f8802bbb',
+          'imagegallery': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/b29e3020-a671-49c9-b8af-43767fae53ad',
+          'singlevideo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/3ec1b885-999d-4ec0-9269-8c0961800f45'
+        },
+        'popup': {
+          'lightbox': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/fdc89dea-dc99-4a68-85f5-aed0367bffc5',
+          'newPageAdded': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/fdc89dea-dc99-4a68-85f5-aed0367bffc5',
+          'moveSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/06f9d900-c568-4b26-a220-2771802cd86f',
+          'deleteSection': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/5a8e9bc0-0864-47f1-abc6-85a6185197db'
+        },
+        'tpa': {
+          'Stores': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/26d203b2-c6e2-4719-8f0d-39e409a1db9a',
+          'Blog': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/b5128f77-cf34-47b3-bc05-874aaa1f8243',
+          'getsubscribers-learn-more': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/13c63e13-c6ff-466c-9afa-553cdb111252',
+          'Bookings': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/d4804362-9575-4bff-bd61-0f0576e30327',
+          'ProGallery': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/68ae0727-b1a6-4279-86c9-af92eb2dd70e',
+          'Music': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/0d640609-38ce-495d-8ddb-c633836aa973'
+        },
+        'members': {
+          'signup-settings-panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/631ca7d1-5162-4bf6-90c5-2142133b005a',
+          'pages-panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a0ed50d7-31a4-49e2-a982-6689babaa25b',
+          'privacy-policy': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/f283585-d102-4a93-8e4c-ccbf72aed087',
+          'terms-of-use': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/6e26476e-30a3-4340-9803-4078fcb2cd7c',
+          'login-panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/943ee4f8-278d-4af5-9b86-a241acabde14'
+        },
+        'link': {
+          'phone': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/269ee4ca-ac26-40a4-b982-b120e84c75d4',
+          'menu': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/bf86bff2-440c-43b4-8a9b-878a889562b7'
+        },
+        'design': {
+          'animations': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/d487d93e-5093-4f83-88cf-3731bd55bf0b',
+          'panel-kit': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/1db49cd1-700d-4f72-a400-e61ff7a93236',
+          'fonts': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/fc38db82-b927-4dc1-9729-d96958756ef7',
+          'menu': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/d09a17cb-18a1-40aa-b49e-9e37b08403ba',
+          'coloration': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/fe18acc2-2087-483e-bf0f-1c16cf67f360',
+          'font': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/43b0e22f-7916-4f82-9905-17876c5b2a31'
+        },
+        'restaurants': {
+          'ordersSettings': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/4bcd5f99-c332-491d-bcdd-e007d8e0b407',
+          'reservationsSettings': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e44c5082-cbfe-455b-85d3-e41b80ef486c',
+          'menusSettings': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a99c97a5-1e97-4881-b5dd-bab085b2744a'
+        },
+        'home': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/e8a37e8c-3172-4636-b914-11724362ce21',
+        'organizemedia': {
+          'imagegallery': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/5a7fb24b-d999-4017-b337-7efbf5d63c5c',
+          'singleextvideo': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9063d60d-f6ed-4c0f-99d1-b9985aeaa4bb'
+        },
+        'social': {
+          'menu': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/9d302210-3a58-4696-b0b4-888d5f79e4dc'
+        },
+        'connectDomain': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/49a67686-f8ca-4198-ae14-8ad7875a4632',
+        'tooltip': {
+          'sectionTooltip': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/f79fe6a0-49a2-477b-80af-6d849ef1c954'
+        },
+        'text-manager': {
+          'dialog': 'https://support.wix.com/zh/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/8343d861-8535-4c56-a7c4-521b7900eb0b'
+        },
+        'app': {
+          'panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/5c451cc1-1e0e-4149-9f8d-480001902f47'
+        },
+        'get-feedback': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/45e59a56-28fb-4f84-975a-1e950fdf9ae3',
+        'switch-design': {
+          'header': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/a6a19742-24a9-40fc-bfee-d335827bb18f',
+          'mobile': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/b31c262d-dd90-493a-aad9-60faad07c192'
+        },
+        'form-builder': {
+          'items-feature-request': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/8efa494e-82a7-433b-98a1-4056bed1badd',
+          'payment-donations': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/4b31023a-1e9b-4b2f-9759-10bc78f1ae82',
+          'form-panel': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/74fd6eec-f6ac-4b6d-90be-68944dad9ea4'
+        },
+        'publish': 'https://support.wix.com/en/widget/63ff21be-9556-4f52-9ac9-4d441bd3dae4/article/2abcf51e-0485-40df-8fce-ea6b306b25a0'
+      },
+      'tpa': {
+        'photoalbums': {
+          'client_showcase': '相簿'
+        },
+        'challenges': {
+          'challenges': '程式',
+          'challenge_page': '程式網頁'
+        },
+        'groups': {
+          'group': 'Group Page',
+          'groups': '群組'
+        },
+        'subscribe': {
+          'subscribe': '訂閱表單',
+          'lets-email-you': 'Let\'s E-mail you',
+          'submit': '提交',
+          'so-youll-never-miss-an-update': '如此您就不會錯過任何最新動態',
+          'stay-up-to-date': '隨時掌握最新消息'
+        },
+        'blog': {
+          'blog': '部落格',
+          'blog_single_post_widget': '單篇貼文'
+        },
+        'forum': {
+          'forum': '論壇'
+        },
+        'restaurantsreservations_widget': {
+          'restaurantsreservations_widget': '訂位'
+        },
+        'stores': {
+          'shopping_cart': '購物車',
+          'thank_you_page': '感謝頁面',
+          'checkout': '結帳',
+          'product_page': '產品網頁',
+          'product_gallery': '門市'
+        },
+        'bookings': {
+          'category-title': 'Our Services',
+          'booking-service-page': '服務網頁',
+          'book_calendar': '預訂行事曆',
+          'scheduler': '網路預約',
+          'book_checkout': '預訂結帳',
+          'book_form': '預訂表單',
+          'bookings_list': '網路預訂'
+        },
+        'paidplans': {
+          'membership_plan_picker_tpa': '方案與定價'
+        },
+        'giftcard': {
+          'default': '禮品卡'
+        },
+        'restaurantsorders': {
+          'online_ordering': '訂餐'
+        },
+        'members': {
+          'hello_member': 'Hello',
+          'welcome': 'Welcome'
+        },
+        'events': {
+          'callToAction': '回覆',
+          'online': {
+            'text': '網路'
+          },
+          'events': '活動資訊'
+        },
+        'blog2': {
+          'post': '文章',
+          'blog': '部落格'
+        },
+        'settings': '設定',
+        'restaurantsmenus': {
+          'menu': '菜單'
+        }
+      },
+      'general': {
+        'cancel': '取消',
+        'customize': '自訂',
+        'settings': '設定',
+        'Stores': '商店',
+        'redo': '取消復原',
+        'still-loading': 'We\'ll be ready soon.',
+        'skip': '略過',
+        'move': '移動',
+        'social': '社群',
+        'sign-up': '註冊',
+        'YO': '您好',
+        'Music': '音樂',
+        'dont-show-again': '不再顯示',
+        'delete': '刪除',
+        'undo': '復原',
+        'layout': '版面配置',
+        'add': '新增',
+        'no-thanks': '不，謝謝',
+        'ProGallery': '媒體',
+        'Blog': '部落格',
+        'continue': '繼續',
+        'leave-note': 'Note: Any unsaved changes will be lost.',
+        'no-link': '未連線',
+        'designs': '設計',
+        'Section': 'Section',
+        'got-it': '知道了',
+        'adjust': '調整',
+        'size': '尺寸',
+        'Bookings': '預約',
+        'edit': '編輯',
+        'logo': '商標',
+        'new-page': '新頁面',
+        'galleries': '圖庫',
+        'blank': '空白頁',
+        'maybe-later': '可以在稍後進行',
+        'email': {
+          'invalid': '這不是有效的電子郵件地址'
+        },
+        'done': '已完成',
+        'map': '地圖',
+        'imported-page': '匯入的網頁',
+        'page': '頁面',
+        'next': '下一步',
+        'apply': '套用',
+        'replace': '更換',
+        'help': '說明',
+        'top': 'Top'
+      },
+      'background-scroll': {
+        'zoom-in': '放大',
+        'fade-in': '淡入',
+        'parallax': '視差',
+        'reveal': '顯示',
+        'none': '無'
+      },
+      'tour': {
+        'fonts': {
+          'manual': {
+            'step2': '點選以開啟字型集',
+            'step1': '請點選這裡，進而自訂設計的字型。',
+            'step1b': '點選字型',
+            'font-size': {
+              'step4': '您對這個字型大小有什麼看法？'
+            },
+            'font-set': {
+              'step4': '您對這個字型集有什麼看法？'
+            },
+            'step0': '點選網站設計',
+            'step3': '選擇字型集'
+          },
+          'auto': {
+            'step1': '自訂設計主題的字型。',
+            'step0': '開幕上線設計選單',
+            'step1b': '開啟字型面板',
+            'step3': '選擇字型集'
+          },
+          'new-font': {
+            'manual-or-auto': '來換換網站的字型吧！ADI 可以為您選擇新的字型組，或者教您怎麼做。'
+          }
+        },
+        'button': {
+          'automatic': '系統自動操作',
+          'keep-them': '保留設定',
+          'like': '保留設定',
+          'keep-it': '保留設定',
+          'back': '返回',
+          'continue': '繼續',
+          'autoormanual': {
+            'title': '您希望如何操作？'
+          },
+          'manual': '教我方法',
+          'try-another': '嘗試其他設計',
+          'next': '下一步',
+          'gotit': '知道了',
+          'auto': '系統自動操作',
+          'dontlike': '再試一次',
+          'done': '完成',
+          'ok': '確定'
+        },
+        'add-section': {
+          'start-from-scratch': '以下是您網頁的各部清單。點擊您需要的部分並且選擇版面配置。',
+          'step3': '以下是您的商務各部清單。點擊您需要的部分並且選擇版面配置。',
+          'step0': '現在，來說明如何新增欄位。',
+          'step4': '完成後，請按一下下方。',
+          'step1': '選擇一個頁面',
+          'step2': '按一下新增欄位'
+        },
+        'when-done2': '完成後，請返回並繼續編輯您的網站。',
+        'animation': {
+          'step1': '點選自訂設計',
+          'step2-1': '點選編輯',
+          'step2': 'ADI 可以自動為您的網站製作動畫。請從下拉式表單中選擇一個動畫風格。',
+          'step2-2': 'ADI 可以自動為您的網站製作動畫。請選擇一個動畫風格。',
+          'step3': '請預覽動畫，確定有符合您的喜好。',
+          'step1b': '點選動畫',
+          'step5': '這是您的網站未使用動畫的樣子。您要嘗試其他樣式，或是保留此設定？',
+          'step4': '向下滾動來看看網站的樣子。喜歡這個動畫嗎？',
+          'step0b': '開幕上線設計選單',
+          'step0': '點選網站設計'
+        },
+        'change-layout': {
+          'manual': {
+            'step3': '按一下欄位設計',
+            'step4': '為您的部分挑選新的版面配置',
+            'step5': '您對這個欄位的新設計有什麼看法？',
+            'step1': '選擇一個頁面',
+            'step2': '按一下您要變更的部分，ADI 就會顯示新的版面配置選項給您。'
+          },
+          'auto': {
+            'step3': '您喜歡這部分的新版面配置嗎？',
+            'step2': '選擇一個新的部分版面配置',
+            'step0': '按一下您要變更的部分，ADI 就會為您選擇一個新的版面配置。',
+            'step1': '開幕上線部份設計'
+          },
+          'step0': '現在，來說明如何變更欄位的設計。',
+          'manual-or-auto': 'ADI 為這部分選擇一個新的版面配置，或者教您怎麼做。',
+          'step2': '選擇一個頁面'
+        },
+        'customize-section-design': {
+          'step0': '按一下要自訂的欄位<br/>，ADI 就會教您怎麼做。',
+          'step4': '完成自訂後，點選下方',
+          'step3': '選擇要自訂的內容',
+          'step2': '點選自訂設計',
+          'step1': '按一下欄位設計'
+        },
+        'coloration': {
+          'step5': '您喜歡網站的配色嗎？',
+          'step1': '點選自訂設計',
+          'step0': '點選網站設計',
+          'step0c': '點選顏色',
+          'step3': 'ADI 為您選擇了這些顏色，讓您在整個網站上運用。',
+          'try-another': '不，我要變更顏色',
+          'step4': '要變更網站顏色，請選擇 ADI 建議的調色盤或選擇新的主要顏色。',
+          'keep-it': '是的，我要使用',
+          'step2': '點選以編輯',
+          'step0b': '開幕上線設計選單'
+        },
+        'page-seo': {
+          'step1': '選擇您要設定的頁面。',
+          'step5': '完成後，請按一下下方。',
+          'step2': '點選頁面設定',
+          'step3': '選取 SEO 入門',
+          'step0': '開啟頁面管理工具',
+          'step4': '有效的 SEO 能協助訪客在 Google 等搜尋引擎上找到您的網站。請選擇相關的關鍵字，包括商務名稱、地點和服務。'
+        },
+        'welcome2': {
+          'step3000': {
+            'title': '',
+            'content': ''
+          },
+          'step2000': {
+            'title': 'Pick a style you love',
+            'content': 'Here are a few designs you might like.\nYou can easily change it later.'
+          },
+          'complete3': {
+            'full-site-title': '來動手自訂網站吧！',
+            'content': '要開始自訂，請點選下方圓圈，查看下一步和網站提示。',
+            'title': '歡迎來到您的網站！'
+          },
+          'step1000': {
+            'content': '我專門指引您製作令人驚豔的網站。此外，我也可以建立數十億種包括文字、圖片等等組合。目前，我已知道您的相關資料。接著，我會使用這些資訊來為您設計獨一無二的網站。',
+            'title': '您好，我是 ADI，也就是 Wix 開發的人工智慧設計。'
+          },
+          'step4000': {
+            'title': '現在，我會開始製作您的首頁',
+            'content': 'Wix ADI has gathered your info and prepared your design.<br/>Now, from billions of combinations including text, images and more,<br/>you’re about to get a website that’s uniquely yours.',
+            'button': '製作我的網站'
+          },
+          'preparing': {
+            'button': '準備中...'
+          },
+          'edit-site': {
+            'title': '目前在預覽模式：<br/><br/>要自訂字型、色彩、<br/>圖片等，請點選編輯網站。'
+          }
+        },
+        'colors': {
+          'auto': {
+            'step1': '自訂設計主題的顏色。',
+            'step2': '開啟調色盤',
+            'step3': '選擇調色盤',
+            'step4': '您對新的顏色組合有什麼看法？',
+            'step0': '開幕上線設計選單'
+          },
+          'manual': {
+            'step4': '您對新的顏色組合有什麼看法？',
+            'step0': '點選網站設計',
+            'step3': '選擇調色盤',
+            'step2': '點選以開啟調色盤',
+            'step1': '請點選這裡，進而自訂設計的配色。'
+          },
+          'manual-or-auto': '來換換網站的顏色吧！'
+        },
+        'entire-website-design': {
+          'auto': {
+            'step0b': '開幕上線設計選單',
+            'step1': '選擇一個主題',
+            'step0': '開幕上線設計選單',
+            'step0c': '開幕上線主題'
+          },
+          'step2': 'What do you think of this design?',
+          'manual': {
+            'step0c': '點選主題',
+            'step1': '選擇主題',
+            'step0': '點選網站設計'
+          },
+          'manual-or-auto': '您已選擇變更網站的設計。ADI 可以為您選擇新主題，或者教您怎麼做。'
+        },
+        'when-done': '完成後，請按一下下方。',
+        'publish': {
+          'step0': '按一下發佈訪客就可以看見您的網站了。',
+          'step1': '選擇免費的 Wix 網域，或是連線至自有網域。別就此止步，請繼續製作吸睛的網站。'
+        },
+        'lighbox': {
+          'step1': '您可選擇喜好的燈箱類型，然後挑選要加進網站的版面配置。',
+          'step3': '您可在此設定燈箱的顯示時機。',
+          'step2': '編輯文字、圖片和連結。您也可選擇和取消選擇要顯示或隱藏的元件。'
+        },
+        'edit-content': {
+          'step3': '點選編輯',
+          'step2': '選擇一個欄位，並編輯其內容',
+          'step1': '選擇一個頁面',
+          'step0': '現在，我會說明如何編輯內容。',
+          'step4': '您可在本區段編輯文字、圖片和連結。如需顯示或隱藏任何元件，請按一下元件旁的圓形。'
+        },
+        'welcome': {
+          'step3': '開啟新增欄位面板',
+          'step5': {
+            'welcomeonly': {
+              'content': '現在，是您發光發熱的時候了。您可以新增欄位、製作更多頁面或上傳自己的相片，開始隨心所欲地設計心中的網站。',
+              'title': '我已完成您的首頁'
+            },
+            'content': '現在，我會說明架設網站的基礎步驟。您只要點選下方的圓形圖示，即可隨時退出或重新加入我的教學導覽。',
+            'title': '我已完成首頁的第一種版本。'
+          },
+          'step0': {
+            'content': '我能夠指導您建立專屬的精美網站。此外，我也可以建立數十億種組合，包括文字、設計、圖片等等。<br/><br/>目前，我已知道您的相關資料。接著，我會使用這些資訊來為您設計獨一無二的網站。',
+            'title': '您好，我是 ADI，也就是 Wix 開發的人工智慧設計。'
+          },
+          'step2': '首頁是使用者第一眼會看見的內容。現在，我會依序建立每個欄位的初始設計。<br/><br/>這可能會花上幾分鐘的時間。您可以按照指示操作，進一步了解如何自行設計這些內容。',
+          'step1': {
+            'content': '選擇最適合網站的外觀和風格，當然您隨時都能變更此設定。',
+            'title': '請協助我掌握您的個人風格。'
+          },
+          'step4': '選擇欄位設計'
+        },
+        'connect-domain': {
+          'step0': '為網站選擇一個好記的網址。'
+        },
+        'business-details-changed-task': {
+          'btn': '自訂網站',
+          'manual': '<b> 歡迎來到您的網站！</b><br/>開始使用專為您選擇的文字開始進行自訂設計工作。'
+        },
+        'logoExtraction': {
+          'step3200': {
+            'skip': '略過',
+            'button': '直接使用這些顏色',
+            'content': '之後您可以輕鬆進行變更。',
+            'title': '這是您的網站專屬調色盤',
+            'newPaletteFromLogo': {
+              'title': '這是您的網站專屬調色盤',
+              'content': '之後您可以輕鬆進行變更。'
+            }
+          },
+          'step3000': {
+            'skip': '略過',
+            'content': '用您商標的顏色<br>來建立您的網站配色。',
+            'title': '想要從您的商標<br/>製作調色盤嗎？',
+            'button': '建立調色盤'
+          },
+          'step3100': {
+            'title': '正在製作您的調色盤…...',
+            'content': '建立調色盤中 ......'
+          }
+        },
+        'stepmanager': {
+          'title': '下一步'
+        },
+        'add-new-page': {
+          'step0': '在這裡點選頁面管理工具。您可以善用此工具，隨時瀏覽不同頁面。',
+          'step1': '點選新增頁面',
+          'step2': '要新增頁面至網站，請使用 ADI 為您的商務推薦的頁面，或從清單挑選。'
+        },
+        'bookings': {
+          'step1': 'Select Service List section',
+          'step2': 'Add a Service List section to this page to better manage and promote your services'
+        },
+        'wiz-seo': {
+          'change-business-details': 'Click To Change Your Site Business type',
+          'click-get-found': '點選並在 Google 上曝光'
+        },
+        'import-content': {
+          'label': 'Hovering next to a field shows "{{textManagerLabel}}" link. Go ahead and press it.'
+        },
+        'import-images': {
+          'step0': '點選編輯和取代',
+          'step1': '點選取代'
+        },
+        'newFonts': {
+          'manual': {
+            'step3': '選擇新的字型集，或是拖曳滑桿，決定所選字型集的大小。'
+          }
+        },
+        'add-new-page2': {
+          'step1': '點選頁面'
+        },
+        'import-content-forbusiness-details-changed': {
+          'label': '點選查看文字選項來檢視所有選擇。'
+        },
+        'add-section2': {
+          'step2': '按一下新增欄位至頁面'
+        },
+        'preview': {
+          'step0': '按一下預覽可以看到您的訪客在桌面和行動裝置上看見的網站外觀。'
+        }
+      },
+      'ecomm_go-to-editor-link': {
+        'title': 'Looking for more </br> eCommerce features?',
+        'button-new': 'Find Out More',
+        'sub-title-new': 'Add a wishlist, related products & more to your store when you switch to the Editor.\n'
+      },
+      'defaults': {
+        'contact': {
+          'phone': '123-456-7890',
+          'address': '500 Terry Francois Street San Francisco, CA 94158',
+          'map-address': '500 Terry Francois Street San Francisco, CA 94158',
+          'fax': '456-789-1234'
+        },
+        'general': {
+          'tagline': '商業標語',
+          'button': '保持聯繫',
+          'copyright-message': '©2023 [Business Name] 版權所有。透過 Wix.com 製作的理想網站'
+        },
+        'footer': {
+          'contact': '連絡人',
+          'address': '地址',
+          'follow': '追蹤'
+        }
+      },
+      'animation-pattern': {
+        'fly': '飛入',
+        'float': '浮動',
+        'fold': '摺疊',
+        'none': '無',
+        'slide': '投影片',
+        'turn': '轉動',
+        'fade': '淡出'
+      },
+      'members-area': {
+        'signup-settings-panel': {
+          'allow-social-login': {
+            'option': {
+              'google': 'Google',
+              'facebook': 'Facebook'
+            },
+            'label': '允許社群登入'
+          },
+          'termsOfUse': {
+            'page-name': '使用條款',
+            'label': '使用條款'
+          },
+          'privacyPolicy': {
+            'page-name': '隱私權政策',
+            'label': '隱私權政策'
+          },
+          'codeOfConduct': {
+            'page-name': '行為準則',
+            'label': '行為準則網頁'
+          },
+          'who-can-be-member': {
+            'option': {
+              'everyone': '每個人',
+              'approved': '我核准的人'
+            },
+            'label': '誰可以成為會員呢？'
+          },
+          'title': '成員註冊設定',
+          'which-option-show-first': {
+            'label': '要先顯示哪個選項？',
+            'option': {
+              'signup': '新會員註冊',
+              'login': '現有會員登入'
+            }
+          },
+          'description': '選擇誰可以成為您的網站會員。<br>備註：這些選項僅適用於您的會員專區。'
+        },
+        'propmote': {
+          'headline': {
+            'forum': 'Let Members Create Forum Profiles',
+            'blog': '在您的部落格 <br> 發展社群',
+            'bookings': '建立客戶對您業務的 <br> 忠誠度',
+            'stores': '建立客戶對您商店的 <br> 忠誠度',
+            'default': '讓訪客成為 <br> 您網站的會員'
+          },
+          'subtitle': {
+            'default': '在您的網站上提供每位會員一個私人帳戶。',
+            'stores': '讓會員建立他們自己的帳號，<br> 快速結帳，還有更多！',
+            'blog': '讓會員建立他們自己的帳號，<br> 互相追蹤、留言，還有更多！',
+            'forum': 'With a members area, members can write a bio, follow each other and more.',
+            'bookings': '讓會員登入他們的帳號，<br> 追蹤他們的預定並且獲得特別優惠。'
+          },
+          'cancel': '稍後再說',
+          'add-app': '新增會員專區'
+        },
+        'login-bar-panel': {
+          'login-bar-show': {
+            'option': {
+              'text': '文字說明',
+              'pic-and-text': '個人圖片和文字',
+              'pic': '個人圖片'
+            },
+            'label': '登入列要顯示什麼？'
+          },
+          'signup-settings-button': {
+            'label': '會員註冊設定'
+          },
+          'title': '會員登入列',
+          'description': '這是訪客註冊，以及會員登入您網站的地方。',
+          'additional-text': {
+            'option': {
+              'welcome': '歡迎',
+              'hello-member': '問候會員',
+              'member-name': '會員名稱'
+            },
+            'label': '文字說明'
+          }
+        },
+        'edit-field': {
+          'button-label': '編輯',
+          'button': {
+            'add-to-site': '新增至網站'
+          }
+        },
+        'open-signup-settings-panel': {
+          'label': '成員註冊設定'
+        }
+      },
+      'smart-assist': {
+        'bookings': {
+          'title': 'Add a Service List section',
+          'fix': 'Add'
+        },
+        'fitness': {
+          'title': '拓展健身解決方案',
+          'fix': '探索',
+          'text': '這些應用程式有助於管理業務。',
+          'apps-topbar-step': {
+            'content': '強大應用程式，帶來一體化健身解決方案。'
+          }
+        },
+        'better_layout': {
+          'title': 'better_layout',
+          'fix': '更新'
+        },
+        'tour': {
+          'unlinked-button': {
+            'button-hidden-step': {
+              'done-button-text': '完成',
+              'content': '已隱藏此按鈕。',
+              'content-for-list-items': '已隱藏此清單上的所有按鈕。'
+            },
+            'link-or-hide-step': {
+              'hide-button-text': '隱藏',
+              'content-for-list-items': '新增按鈕的連結，或是隱藏此清單上的所有按鈕。',
+              'content': '新增按鈕的連結，或是在此欄位中隱藏該按鈕。',
+              'link-button-text': '連結',
+              'hide-button-text-for-list-items': '隱藏全部'
+            },
+            'button-linked-step': {
+              'done-button-text': '完成',
+              'content': '您的按鈕已連結。'
+            }
+          },
+          'socials-default-link': {
+            'socials-linked-step': {
+              'done-button-text': '完成',
+              'content': '太好了！所有的帳號<br/>都已經連線。'
+            },
+            'hide-or-update-step': {
+              'update-links-button': '更新連結',
+              'content': '連線至您的社群帳號，<br> 讓訪客能夠追蹤您。',
+              'hide-icons-button': '在網站中隱藏'
+            },
+            'socials-globally-hidden': {
+              'content': '系統已隱藏社群圖示。',
+              'done-button-text': '完成'
+            },
+            'hide-socials-globally': {
+              'content': '此欄位已隱藏社群圖示。只要按一下，即可隱藏網站中的所有社群圖示。',
+              'hide-all-button-text': '隱藏所有圖示'
+            },
+            'socials-cant-be-hidden-step': {
+              'content': '部分社群面板無法隱藏。',
+              'done-button-text': '知道了'
+            },
+            'link-socials-step': {
+              'content': '更新並新增您的連結，讓大家可以在社群上找到並追蹤您。'
+            }
+          },
+          'import-content': {
+            'done-use-text': '知道了',
+            'text-manager-panel': {
+              'select': '看到您喜歡的文字了嗎？用到您的網站上。用新事物取代您的文字或者直接新增。'
+            }
+          }
+        },
+        'socials_default_links': {
+          'title': '更新社交帳戶',
+          'fix': '更新'
+        },
+        'dividers': {
+          'page': '{{pageName}}頁面',
+          'general': '一般',
+          'section': '{{sectionName}} 欄位'
+        },
+        'lightbox': {
+          'fix': '新增',
+          'title': '新增燈箱',
+          'text': '吸引訪客目光，傳達信息。'
+        },
+        'divider': {
+          'content': 'Site Content',
+          'upgrade': 'Upgrade',
+          'imported-content': '您已匯入的內容',
+          'general': '網站製作入門'
+        },
+        'unlinked-button-issue': {
+          'text-for-list-items': '新增連結至 {{listItemName}}',
+          'text': '新增連結至 {{buttonName}}'
+        },
+        'manage_menu': {
+          'apps-topbar-step': {
+            'content': '管理餐廳菜單。'
+          },
+          'fix': '立即開始',
+          'title': '管理菜單'
+        },
+        'empty-state': {
+          'before-suggestions': {
+            'title': '這裡會出現智慧提示',
+            'description': '了解您的網站何時需要更新一些內容 - 像是您的社交連結、按鈕等。'
+          },
+          'after-suggestions': {
+            'description': '了解您網站上的某些內容何時需要更新。',
+            'title': '做得好！現在已更新至最新狀態'
+          },
+          'header': '通知將會出現在此處',
+          'go-to-assistant-bucket': '查看下一步',
+          'text': '了解您的網站何時需要更新一些內容 - 像是您的社交連結、按鈕等。'
+        },
+        'image_upscale': {
+          'title': '改善您的圖片',
+          'fix': '改善圖片'
+        },
+        'manage_orders': {
+          'apps-topbar-step': {
+            'content': '查看並回應顧客的線上訂單。'
+          },
+          'title': '管理餐廳訂單',
+          'fix': '管理點餐'
+        },
+        'import-images-issue': {
+          'fix': '使用您的圖片',
+          'text': '尋找您已經匯入並且在您的網站使用的影像。'
+        },
+        'imported_images': {
+          'title': 'imported_images',
+          'fix': '更新'
+        },
+        'import-content-issue': {
+          'fix': '使用您的文字',
+          'text': '尋找您已經匯入並且在您的網站使用的文字。'
+        },
+        'imported_content': {
+          'title': 'imported_content',
+          'fix': '更新'
+        },
+        'unlinked_button': {
+          'fix': '連結',
+          'title': '您的按鈕需要連結'
+        },
+        'publish_site_interval': {
+          'fix': '發佈',
+          'title': '發佈'
+        },
+        'notifications': {
+          'headline': '通知',
+          'default': {
+            'fix': '更新'
+          }
+        },
+        'create_menu': {
+          'title': '製作菜單',
+          'apps-topbar-step': {
+            'content': '在菜單中新增菜式。'
+          },
+          'fix': '立即開始'
+        },
+        'create_orders': {
+          'apps-topbar-step': {
+            'content': '在網站新增菜單，方便顧客點餐。'
+          },
+          'fix': '新增菜單',
+          'title': '設定線上點餐'
+        },
+        'bookings-issue': {
+          'text': 'Add a Service List section to promote and manage your Bookings app services better'
+        },
+        'image-upscale-issue': {
+          'text': '取得較佳的影像解析度。',
+          'fix': '改善'
+        },
+        'publish_site_interval-issue': {
+          'text': '現在是發佈的好時機。',
+          'fix': '發佈網站'
+        },
+        'publish-issue': {
+          'text': '現在是直播的好時機。',
+          'fix': '發佈網站'
+        },
+        'issue': {
+          'fix': '開始吧！'
+        },
+        'socials-default-links-issue': {
+          'text': '連結至您的社交帳戶'
+        }
+      },
+      'tpa_add_product_button': 'Add a Product',
+      'page-preset-previews': {
+        'mobile-menu': {
+          'pages-list': {
+            'home': '首頁',
+            'about': '關於',
+            'welcome': '歡迎'
+          }
+        },
+        'start-from-scratch': '從頭開始',
+        'pagination-has-more': '查看設計',
+        'preview-mode': {
+          'edit-site': '編輯網站'
+        },
+        'edit-site': '套用此設計',
+        'description': '您可以輕易開始自訂色彩、圖片等更多內容。',
+        'title': '挑選最喜歡的首頁設計',
+        'back': '返回',
+        'skip': '略過'
+      },
+      'alt': {
+        'text': {
+          'label': {
+            'Vimeo': 'Vimeo',
+            'Houzz': 'Houzz',
+            'Instagram': 'Instagram',
+            'VKONTAKTE': 'VK Share',
+            'LinkedIn': 'LinkedIn',
+            'GooglePlus': 'Google Plus',
+            'Tumblr': 'Tumblr',
+            'Myspace': 'Myspace',
+            'Blogger': 'Blogger',
+            'Yelp': 'Yelp for business',
+            'ODNOKLASSNIKI': 'OK.ru',
+            'Pinterest': 'Pinterest',
+            'SoundCloud': 'SoundCloud',
+            'Flickr': 'Flickr',
+            'Twitter': 'Twitter',
+            'YouTube': 'YouTube',
+            'TripAdvisor': 'Tripadvisor',
+            'Google': {
+              'Places': 'Google Places'
+            },
+            'Facebook': 'Facebook'
+          }
+        }
+      },
+      'floating-go-to-editor-link': {
+        'use-advanced-editor': '前往編輯器',
+        'advanced-editor': '前往編輯器'
+      },
+      'text-manager-dialog': {
+        'imported-text': {
+          'description': '使用您匯入的文字，或搜尋 ADI 提供的\r\n自訂文字。'
+        },
+        'actions': {
+          'append': '新增文字',
+          'replace': '更換文字'
+        },
+        'best-match-text': '推薦的文字',
+        'adi': {
+          'description': '取代您現有的文字，或者直接新增。'
+        },
+        'best-match-description': 'ADI 掃描了您匯入的文字，以便為此段落找到最適合的內容。',
+        'best-match-label': '推薦',
+        'no-text-found': '這裡沒有文字',
+        'description': '使用您匯入的文字，或搜尋 ADI 提供的自訂文字。',
+        'search-placeholder': '搜尋文字'
+      },
+      'Stats_Overview_Tips_AddLogo_Text': '',
+      'business-details-changer': {
+        'main-title': '快速開始',
+        'secondary-title': {
+          'step-1': {
+            'title': '您的商務或網站名稱為何？'
+          },
+          'step-0': {
+            'title': '您網站的目的是什麼？'
+          }
+        }
+      },
+      'assistant-menu-bucket': {
+        'publish': {
+          'description': '將網站發佈上線，讓其他人能在網路上找到您的網站。',
+          'name': '發佈'
+        },
+        'change-content': {
+          'description': '編輯您所選部分的文字、影像，以及連結，或者增加新內容至您的網站。',
+          'name': '編輯內容'
+        },
+        'change-site-design': {
+          'description': '您可以根據自己喜愛的風格，將網站設計個人化。例如：變更顏色、字型等等。',
+          'name': '自訂設計網站'
+        },
+        'connect-domain': {
+          'name': '連線網域',
+          'description': '透過專屬網域讓訪客更容易在線上找到您的網站。'
+        },
+        'essentials': {
+          'description-with-tpa': '預覽訪客會看到的網站畫面。是否要進行變更？點選發佈後，網站即可上線。',
+          'description-without-tpa': '預覽訪客所看到的網站。當您準備好後，點選發佈即可上線。',
+          'name': '網站製作入門'
+        },
+        'change-section-design': {
+          'name': '設計欄位',
+          'description': '自訂欄位的顏色、文字和動畫，或嘗試新的版面配置。'
+        },
+        'seo': {
+          'name': '在 Google上曝光',
+          'description': '告訴我們更多關於您網站的內容，以便訪客在搜尋時能找得到。'
+        },
+        'imported-content': {
+          'description': '尋找已匯入的 ADI 文字和圖片，以便用於您的網站。',
+          'name': '匯入內容'
+        }
+      },
+      'preset-title': {
+        'switch-preset': '使用此版面配置',
+        'click': '新增此部分',
+        'add': '新增此頁面',
+        'lightbox': {
+          'add': '新增此燈箱'
+        },
+        'change-color': '直接使用這些顏色',
+        'click-or-drag': '新增此部分'
+      },
+      'assistant-menu': {
+        'assistant-video-description': '跟著以下步驟操作，即可完成網站製作。<br/>首先，請觀看這部簡短的<span class=\'assistant-video-link\' ng-click=\'$ctrl.openAssistantVideo($event)\'>介紹影片</span>。',
+        'assistant-video-description-smartAssist': '跟著以下步驟操作，即可完成網站製作。<br/>首先，請觀看這部簡短的<span class=\'assistant-video-link\' ng-click=\'$ctrl.openAssistantVideo($event)\'>介紹影片</span>。',
+        'assistant-video-link': 'https://www.youtube.com/embed/U1d4B94KMeM?rel=0&autoplay=1&showinfo=0'
+      },
+      'go-to-editor-popup-new': {
+        'option': {
+          '1': '拖放各種檔案',
+          '2': '使用進階設計工具',
+          '3': '尋找更多應用軟體'
+        },
+        'buttons': {
+          'cancel': '繼續使用 ADI',
+          'ok': '切換至編輯器'
+        },
+        'warning': {
+          'text': '我們不建議切換至編輯器然後再回來 ADI。您在編輯器中進行的變更不會顯示在您的網站上。'
+        },
+        'title': '運用我們的編輯器實現完全自由的設計',
+        'hire-a-professional-text': '快速連線。'
+      },
+      'ecomm_go-to-editor-popup-new': {
+        'warning': {
+          'text': 'You should know: You are currently building in ADI. You can always come back, yet changes you make in the Editor won’t transfer with you.'
+        },
+        'option': {
+          '1': 'Add store features',
+          '2': 'Use advanced design tools',
+          '3': 'Drag & drop anything'
+        },
+        'buttons': {
+          'cancel': 'Stay in ADI',
+          'ok': 'Switch to Editor'
+        },
+        'title': 'Get More eCommerce Features and Full Design Control \n'
+      },
+      'error': {
+        'save-failure': {
+          'ok-button': '重新載入',
+          'text': '儲存網站時發生錯誤。<br/>點選「重新載入」以繼續操作。'
+        },
+        'story-archived': {
+          'text': '您查詢的網站已遭刪除，或已經不存在。<br/><br/>但我們或許仍能協助您<br/>找到所需的內容：<br/><a href="http://wix.com">請前往 Wix.com</a><br/><a href="https://www.wix.com/new/vertical?ref=adi">建立新網站</a><br/><a href="https://www.wix.com/support/html5/">連絡我們的支援團隊</a>'
+        },
+        'publish-blocked': {
+          'heading': '無法發佈網站',
+          'text': '網站不符合條款與條件，目前已遭鎖定。<br/><br/>如要了解如何解除鎖定和發佈網站，<a href="https://www.wix.com/contact?nodeId=OUWEMf1hGw5UwU7WDGT5&referral=legalcontentinfrigement*">請聯絡我們</a>。'
+        },
+        'session-expired': {
+          'ok-button': '登入',
+          'text': 'You have been signed out of your account. Sign In again.'
+        },
+        'site-not-managed-by-ob': {
+          'ok-button': '前往編輯器',
+          'heading': '您在這裡做什麼呢？:)',
+          'text': '若要繼續編輯您的吸睛網站，請前往編輯器。'
+        },
+        'publish-disabled-on-server': {
+          'ok-button': '確定',
+          'text': '伺服器正在維修中，因此暫時無法發佈任何內容。請勿關閉編輯器，並在 15 分鐘後再試一次。'
+        },
+        'save-as-template': {
+          'ok-button': 'OK',
+          'text': 'There was an error saving your site as template.<br/>Click Reload to continue working.'
+        },
+        'conflicting-changes': {
+          'text': '您正同時在多個視窗或分頁中作業。<br/>請重新載入網站，以檢視最近的變更。',
+          'ok-button': '重新載入'
+        },
+        'conflicting-changes-autopilot': {
+          'text': 'Auto pilot is running in the backround.<br/>Reload to view your site with the most recent changes.'
+        }
+      },
+      'link-details': {
+        'none': {
+          'text': '把此元件與某物連結......',
+          'label': '無'
+        },
+        'page': {
+          'select-anchor': {
+            'top-of-page': '網頁頂端',
+            'text': '選擇頁面上的位置'
+          },
+          'label': '網頁',
+          'select-page': {
+            'text': '選擇頁面'
+          }
+        },
+        'dialog': {
+          'ok': '已完成',
+          'cancel': '取消',
+          'header': '連結至'
+        },
+        'web': {
+          'placeholder': 'i.e. www.yourlink.com',
+          'error': '這不是有效的網址',
+          'text': '網址',
+          'label': '網址'
+        },
+        'paypal': {
+          'amount': {
+            'validation': '請設定有效金額',
+            'label': '總金額'
+          },
+          'toggle': {
+            'label': '固定金額'
+          },
+          'label': 'PayPal 捐款',
+          'email': {
+            'placeholder': '例如：info@mysite.com',
+            'label': 'PayPal 電子郵件地址'
+          },
+          'currency': {
+            'label': '貨幣'
+          }
+        },
+        'lightbox': {
+          'empty-state': {
+            'button': '新增燈箱',
+            'text': '建立會自動彈出的燈箱或將其連結至您網站上的元件。'
+          },
+          'text': '選擇燈箱',
+          'label': '燈箱'
+        },
+        'document': {
+          'text': '連結至',
+          'replace-file': {
+            'button': '取代檔案'
+          },
+          'label': '文件',
+          'select-file': {
+            'button': '選擇檔案'
+          }
+        },
+        'phone': {
+          'help': {
+            'text': '使用行動裝置或平板電腦瀏覽您網站的訪客可以按一下此連結與您通話。',
+            'cta': '進一步了解。'
+          },
+          'text': '電話號碼',
+          'label': '電話',
+          'error': '這不是有效的電話號碼',
+          'placeholder': 'i.e +1-234-5678910'
+        },
+        'email': {
+          'placeholder': '例如：Info@mysite.com',
+          'error': '這不是有效的電子郵件地址',
+          'text': '電子郵件地址',
+          'label': '電子郵件'
+        }
+      },
+      'toasters': {
+        'list-item': {
+          'apply-to-all': 'Your color was applied to all items.',
+          'reset': 'Your item colors were reset.'
+        },
+        'page-hidden': '此項目不會於選單顯示。',
+        'could-not-fit-text': '已依據文字內容更新設計。',
+        'list-item-design-changed': '將此清單中的所有項目換成新的設計。',
+        'list-item-duplicated': '已複製清單項目。',
+        'preview-in-manual-save': 'previews may not be fully updated in manual save mode.',
+        'list-item-added': '已新增清單項目。',
+        'section-deleted': '系統已刪除此欄位。',
+        'list-item-media-type-changed': '切換所有項目的媒體類型。',
+        'lightbox-deleted': '燈箱已從您的網站刪除。',
+        'section-moved': '系統已移動此欄位。',
+        'list-item-deleted': '已刪除清單項目。',
+        'page-deleted': '頁面已從您的網站刪除。',
+        'new-design-applied': '您有一個新的網頁設計。'
+      },
+      'go-to-editor-link': {
+        'button-new': '前往編輯器',
+        'sub-title': '以編輯器中的進階設計工具與更多專業應用程式來完整自訂您的網站。',
+        'title': '想要更多<br>設計選項嗎？',
+        'button': '前往編輯器',
+        'sub-title-new': '以編輯器中的進階設計工具與更多應用程式來完整自訂您的網站。'
+      },
+      'seo_panel': {
+        'keywords': {
+          'placeholder': '新增關鍵字並用逗號分隔',
+          'validation': '最多只能允許 10 個關鍵字和 250 個字元（包含空格）',
+          'launch': {
+            'title': '在 Google 上曝光',
+            'note': 'Google 並不使用這些關鍵字，但其他搜尋引擎可能會使用。',
+            'description': '使用 Wix SEO 精靈啟動網站 SEO。立即前往您的逐步方案。',
+            'button': '開始吧！'
+          }
+        },
+        'url': {
+          'validation': '頁面網址至少要 1 個字元以上，且不得包含特殊字元（%、&、# 等）'
+        },
+        'search_results': {
+          'placeholder': '在搜尋結果中隱藏此頁面'
+        },
+        'description': {
+          'placeholder': '這個頁面有何獨特之處？說明您的事業和網站的內容...',
+          'validation': 'Description length must be 160 characters at most (including white spaces)'
+        },
+        'title': {
+          'validation': '標題長度不得超過 70 個字元（包含空格）'
+        }
+      },
+      'assistant-panel': {
+        'seen-tooltip-text': '已瀏覽',
+        'article-url': 'https://wix.wixanswers.com/apps/widget/v1/wix/74e18825-9887-4be4-93c6-33f69432dc5c/view/en/article/',
+        'stop-tour': '結束旅程',
+        'all-tours': '所有旅程',
+        'popular': {
+          '0': '從網頁和章節開始',
+          '1': '編輯您的網站內容',
+          '2': '預覽並發佈您的網站',
+          '3': '將您的網站升級至進階'
+        },
+        'take-tour': '開始旅程',
+        'no-results': '本次搜尋沒有結果',
+        'try-again': '請嘗試搜尋其他內容。',
+        'home': '返回',
+        'search': {
+          'placeholder': '搜尋：網站設計、內容...'
+        },
+        'show-less': 'Show Less',
+        'related-tours': '相關旅程',
+        'back': '返回',
+        'popular-articles': '熱門文章',
+        'related-articles': '相關文章',
+        'show-more': '顯示更多'
+      },
+      'media': {
+        'image-alignment-options': {
+          'top': '頂端',
+          'bottom': '底部',
+          'center': '置中'
+        }
+      },
+      'notifications': {
+        'version-info': 'Application version: {{staticsVersion}}. Content Version: {{contentVersion}}. Santa Version: {{santaVersion}}. Metadata version: {{metadataVersion}}'
+      },
+      'AdiToEditor_Loader_Step3': 'Adding your apps…',
+      'tpa_set_appointment_hours_title': 'Set your available hours so clients can book your time',
+      'blog-go-to-editor': {
+        'button': {
+          'learn-more': '瞭解更多',
+          'okay': '切換至編輯器'
+        },
+        'title': '已經不支援您網站上的舊部落格',
+        'warning': '如果您回到 ADI，編輯器中的變更將不會顯示在您的網站上。',
+        'text': '請前往 Wix 編輯器更新至新部落格。'
+      },
+      'new-tour': {
+        'welcome2': {
+          'step2000': {
+            'title': '挑選一個您喜歡的主題',
+            'content': '該主題的字型和顏色將用於您的網站設計。您可以稍後再輕易進行變更。'
+          }
+        }
+      },
+      'media-organize': {
+        'gallery': {
+          'subtitle': '拖放媒體到定位，讓圖庫井然有序。',
+          'title': '組織圖庫中的圖片'
+        },
+        'clipart': {
+          'subtitle': '選擇美工圖案',
+          'suggestions-title': '在其他建議的美工圖案中，選擇一個項目來取代最上方的美工圖案'
+        },
+        'custom-tab': {
+          'show-all': '顯示全部',
+          'free': 'Wix 免費提供',
+          'title': '推薦',
+          'from-business': '您的商務圖片',
+          'recommended-section': '特別為您的欄位推薦的項目'
+        },
+        'type': {
+          'title': '媒體管理員'
+        },
+        'video': {
+          'subtitle': '選擇影片',
+          'suggestions-title': '在其他建議的影片中，選擇一個項目來取代最上方的影片'
+        },
+        'shape': {
+          'suggestions-title': '在其他建議的形狀中，選擇一個項目來取代最上方的形狀',
+          'subtitle': '選擇形狀'
+        }
+      },
+      'form-builder': {
+        'form-bar-panel': {
+          'description': 'Form Builder Description',
+          'title': '表單幫手'
+        },
+        'edit-field': {
+          'button-label': '編輯'
+        }
+      },
+      'business_card': {
+        'fax': {
+          'label': '傳真',
+          'placeholder': '請輸入您的傳真號碼'
+        },
+        'address': {
+          'label': '地址',
+          'placeholder': '輸入您的地址'
+        },
+        'phone': {
+          'placeholder': '請輸入您的電話號碼',
+          'label': '電話'
+        },
+        'add-social-network': {
+          'label': '新增社群網路'
+        },
+        'website_address': {
+          'placeholder': '例如：www.yoursite.com'
+        },
+        'social-media': {
+          'label': '社交帳戶'
+        },
+        'email': {
+          'placeholder': '輸入您的電子信箱'
+        },
+        'contact-email': {
+          'label': '連絡人電子郵件'
+        },
+        'website': {
+          'label': '現有的網站'
+        },
+        'social': {
+          'placeholder': '貼上社群連結'
+        },
+        'name': {
+          'label': '姓名',
+          'placeholder': '輸入您的商務名稱'
+        },
+        'title': '檢閱並編輯資訊'
+      },
+      'image-upscale-modal': {
+        'enhance-description': '改善圖片'
+      },
+      'BUILDER': {
+        'FIELD-EDITOR': {
+          'FIELD': {
+            'SINGLE': {
+              'FORM': 'Form'
+            }
+          }
+        }
+      },
+      'tpa_upgrade_text': 'Upgrade to premium to start accepting payments',
+      'tpa_add_payment_button': '連線',
+      'text-manager': {
+        'dialog': {
+          'title': '自訂文字選項'
+        },
+        'field-editor': {
+          'your-text': '查看文字選項',
+          'use-imported-images': '使用影像',
+          'imported-text': '使用您的文字',
+          'use-imported-text': '使用文字',
+          'link': '文字選項'
+        },
+        'default-source': 'ADI'
+      },
+      'tpa_upgrade_button': '立即升級',
+      'dropdown': {
+        'manage-pages': '管理頁面',
+        'site-pages': '網頁'
+      },
+      'import-site': {
+        'import-page': {
+          'panel-header': '匯入您的頁面',
+          'description': 'ADI 從{{site}}匯入了這些頁面。選擇任何頁面將其新增到您的網站。',
+          'loader': '匯入可使用頁面中 ...'
+        }
+      },
+      'virtual-numbers': {
+        'field-editor': {
+          'after': {
+            'button': '開啟',
+            'text': '使用商務電話號碼與顧客連線'
+          }
+        }
+      },
+      'Intro': {
+        'import-youtube-URL': {
+          'channel-does-not-exist': '此頻道未顯示。請再次檢查網址，然後再試一次。'
+        }
+      },
+      'pages-preset-previews': {
+        'edit-site-button': '編輯網站',
+        'description': '這些網頁都是為您量身打造的。您稍後可以自訂。',
+        'add': {
+          'button': '+ 新增網頁'
+        },
+        'blank-page': '空白頁',
+        'skip-button': '略過',
+        'title': '新增網頁至您的網站'
+      },
+      'modelTree': {
+        'homepage': 'Home'
+      },
+      'page-transition': {
+        'horizontal': '水平',
+        'vertical': '垂直',
+        'out-in': '從外到內',
+        'none': '無',
+        'cross-fade': '交叉淡入淡出'
+      },
+      'Stats_Overview_Tips_AddLogo_Header': '',
+      'init': {
+        'error': {
+          'load': '無法載入此網站',
+          'redirecting': '{{error}}，正在重新導向…',
+          'access': '您沒有存取此網站的權限'
+        }
+      },
+      'tpa_add_service_button': 'Create a Service',
+      'dummy-key': 'DUMMY',
+      'go-to-editor-popup': {
+        'warning': '如果您要回到 ADI，所有儲存在編輯器的變更都不會被傳送。',
+        'cancel': '繼續使用 Wix ADI',
+        'editor-feature4': 'Add advanced Apps, stunning features and so much more.',
+        'editor-feature1': '拖放任何元素，讓網站外觀符合您的需求。',
+        'spinner-message': '正在編輯器中載入您的網站......',
+        'go-to-editor': '前往編輯器',
+        'editor-feature3': '最佳化網站，讓它在所有裝置上都能呈現絕佳效果。',
+        'title': '在編輯器中完整自訂您的網站',
+        'editor-feature2': '變更任何字型或色彩，並自訂網站設計。'
+      },
+      'assistant-tab-list': {
+        'smart-assist-tab-body-title': '讓您的網站保持最新狀態。以下是一些需要注意的地方。',
+        'smart-assist-tab-header': '智慧提示'
+      },
+      'tpa_setup_shipping_button': 'Set Up',
+      'tpa_setup_shipping_title': 'Set up your shipping & tax regions',
+      'yair': {
+        'test': 'testing',
+        'test|abTranslate_1|custom': 'hi'
+      },
+      'tpa_add_payment_title': 'Connect a payment method to start getting paid',
+      'tpa_set_appointment_hours_button': 'Set Hours',
+      'regex': {
+        'email_format': '^(([^<>()\\[\\]\\\\.,;:\\s@"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$'
+      },
+      'AdiToEditor_Loader_Step1': 'Creating your site...',
+      'Stats_Overview_Tips_AddLogo_Button_Label': '',
+      'popover': {
+        'fpd-popup': {
+          'subtitle': '我們已經最佳化您的頁面設計，<br/> 讓您愛不釋手。',
+          'title': '試試最佳化設計'
+        }
+      },
+      'full-page-design': {
+        'edit': '套用此設計',
+        'choose-page-design-title': '選擇最佳的網頁設計',
+        'choose-page-design-description': '這些版面配置是專為此頁面內容而訂製的。'
+      },
+      'tpa_add_product_title': 'Add your first product',
+      'url': {
+        'dashboard': 'https://www.wix.com/my-account'
+      },
+      'AdiToEditor_Loader_Step2': 'Loading your pages…',
+      'assistant-menu-header': {
+        'description': '請選擇下方選項，接著我會<br>引導您製作完整的網站。'
+      },
+      'tpa_add_service_title': 'Add your first services to start getting booked',
+      'pages': {
+        'panel': {
+          'edit': {
+            'sitemenu': {
+              'button': 'DELETE THIS KEY'
+            }
+          }
+        }
+      },
+      'site-converter': {
+        'default': {
+          'item-title': 'Item {{index}}'
+        }
+      },
+      'popup': {
+        'new-topbar': {
+          'title': '全新頂端列，隆重登場',
+          'text': '請來看看經精心改動的全新頂端列。'
+        }
+      },
+      'AdiToEditor_Loader_CounterADI': 'Time remaining: less than {num} seconds'
+    };
+    $translateProvider.translations('zh', translations);
+    $translateProvider.translations(translations);
+    $translateProvider.preferredLanguage('zh');
+  }
+]);
